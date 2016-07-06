@@ -1,0 +1,28 @@
+@media (max-width: 767px) {
+
+  .navbar-header {
+    position: absolute;
+    top: -8.5em;
+    right: 0;
+    height:0px;
+    background-color: #FFE0BC;
+    border:none;
+  }
+  .navbar-default .navbar-toggle {
+    background-color: #f9ce9c;
+    border-color: #dbbb69;
+  }
+  /*.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #FFE0BC;
+  }*/
+  .navbar-default .navbar-toggle {
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+  }
+  .navbar {
+    min-height: 0px;
+  }
+  .navbar-main {
+    border-bottom: 1px solid #FEB35D;
+  }
+}
