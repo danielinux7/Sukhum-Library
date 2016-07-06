@@ -1,0 +1,9 @@
+ToDo.txt
+app/*.js
+app/*.js.map
+app/*.*.js
+app/*.*.js.map
+app/*/*.*.js
+app/*/*.*.js.map
+node_modules/*
+typings/*
