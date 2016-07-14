@@ -1,0 +1,7 @@
+/*To do...this is not a good way to keep the footer at the bottom of the page!*/
+lib-content{
+  min-height: 50%;
+  display: block;
+}
+
+@media (max-width: 616px) {}

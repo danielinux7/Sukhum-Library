@@ -5,12 +5,8 @@ import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 @Component({
   selector: 'lib-app',
-  template: `
-  <lib-header></lib-header>
-  <lib-nav></lib-nav>
-  <lib-content></lib-content>
-  <lib-footer></lib-footer>
-`,
+  templateUrl: './app/app.component.html',
+  styleUrls:  ['./app/app.component.css'],
   directives:[HeaderComponent, NavComponent, ContentComponent, FooterComponent]
 })
 export class AppComponent { }
