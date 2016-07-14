@@ -7,21 +7,27 @@ section, article, aside, footer, header, nav, hgroup {
   display:block;
 }
 
-body {
-  margin:0 15%;
+lib-app{
   border-left: 1px solid #FEB35D;
   border-right: 1px solid #FEB35D;
   border-radius: 0 0 10px 10px;
+  display: block;
+  margin:0 15%;
 }
 
-@media (max-width: 800px) {
-  body {
-    margin: 0;
+@media (max-width: 1071px) {
+  lib-app {
+    margin: 0 10%;
+  }
+
+@media (max-width: 936px) {
+  lib-app {
+    margin: 0 5%;
   }
 }
 
-@media (max-width: 980px) and (min-width: 801px) {
-  body {
-    margin: 0 10%;
+@media (max-width: 833px) {
+  lib-app {
+    margin: 0;
   }
 }
