@@ -1,3 +1,8 @@
+@font-face {
+font-family: 'Apsni';
+src: url('./fonts/Apsni.ttf')  format('truetype');
+}
+
 section, article, aside, footer, header, nav, hgroup {
   display:block;
 }
