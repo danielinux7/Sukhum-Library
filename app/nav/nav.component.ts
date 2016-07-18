@@ -7,4 +7,9 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   styleUrls:  ['./app/nav/nav.component.css'],
   directives:[ROUTER_DIRECTIVES]
 })
-export class NavComponent { }
+export class NavComponent {
+   onSelect(event) {
+     $('.active')[0] !== undefined && $('.active')[0].removeAttribute('class','active');
+     $(event.target).closest('li').addClass('active');
+   }
+ }
