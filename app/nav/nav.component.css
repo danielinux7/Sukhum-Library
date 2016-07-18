@@ -3,6 +3,12 @@
   font-size: 18px;
 }
 
+@media (min-width: 768px) {
+  .navbar-main .navbar-collapse {
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 767px) {
 
   .navbar-header {

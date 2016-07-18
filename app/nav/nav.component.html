@@ -13,24 +13,24 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="dropdown active">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Вход <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Очертание</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Выход</a></li>
-          </ul>
-        </li>
-        <li><a class="nav-home" [routerLink]="['/home']"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li class="active"><a class="nav-home" [routerLink]="['/home']"><span class="glyphicon glyphicon-home"></span></a></li>
         <li><a [routerLink]="['/news']">Новости</a></li>
         <li><a href="#">Календарь</a></li>
         <li><a href="#">О нас</a></li>
         <li><a [routerLink]="['/contacts']">Контакты</a></li>
       </ul>
+      <!-- <div class="nav navbar-nav dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Вход <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Очертание</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Выход</a></li>
+        </ul>
+      </div> -->
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Поиск">
