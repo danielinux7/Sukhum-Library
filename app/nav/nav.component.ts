@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
+declare  var $:any;
 
 @Component({
   selector: 'lib-nav',
@@ -9,7 +10,7 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 })
 export class NavComponent {
    onSelect(event) {
-    //  $('.active')[0] !== undefined && $('.active')[0].removeAttribute('class','active');
-    //  $(event.target).closest('li').addClass('active');
+     $('.active')[0] !== undefined && $('.active')[0].removeAttribute('class','active');
+     $(event.target).closest('li').addClass('active');
    }
  }
