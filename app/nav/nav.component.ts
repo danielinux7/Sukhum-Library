@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from 'ng2-translate/ng2-translate';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 declare  var $:any;
 
@@ -6,6 +7,7 @@ declare  var $:any;
   selector: 'lib-nav',
   templateUrl: './app/nav/nav.component.html',
   styleUrls:  ['./app/nav/nav.component.css'],
+  pipes: [TranslatePipe],
   directives:[ROUTER_DIRECTIVES]
 })
 export class NavComponent {

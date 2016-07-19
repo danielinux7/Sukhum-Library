@@ -14,5 +14,11 @@
     "events": "Events",
     "meetups": "Meetups",
     "twitter": "Twitter",
-    "apsny": "Apsny Fund"
+    "apsny": "Apsny Fund",
+    "home": "Home",
+    "news": "News",
+    "calendar": "Calendar",
+    "us": "About Us",
+    "contacts": "Contacts",
+    "search": "Search"
 }
