@@ -20,31 +20,24 @@ a:hover {
 .dropdown-menu{
   min-width: 50px
 }
-.flag-en{
-  background-image: url('/images/flags/en.png');
+.flag-en, .flag-ru, .flag-ab, .flag-tr, .flag-ar{
   background-repeat: no-repeat;
-  /*background-size: 65%;*/
   width: 30px;
   height: 20px;
+}
+.flag-en{
+  background-image: url('/images/flags/en.png');
 }
 .flag-ru{
   background-image: url('/images/flags/ru.png');
-  background-repeat: no-repeat;
-  /*background-size: 65%;*/
-  width: 30px;
-  height: 20px;
 }
 .flag-tr{
   background-image: url('/images/flags/tr.png');
-  background-repeat: no-repeat;
-  /*background-size: 65%;*/
-  width: 30px;
-  height: 20px;
 }
 .flag-ar{
   background-image: url('/images/flags/ar.png');
-  background-repeat: no-repeat;
-  /*background-size: 65%;*/
-  width: 30px;
-  height: 20px;
+}
+.flag-ab{
+  background-image: url('/images/flags/ab.gif');
+  background-size: 100%;
 }
