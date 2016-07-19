@@ -18,7 +18,9 @@ a:hover {
     transition-duration: 0.4s;
 }
 .dropdown-menu{
-  min-width: 50px
+  min-width: 50px;
+  max-height: 100px;
+  overflow: scroll;
 }
 .flag-en, .flag-ru, .flag-ab, .flag-tr, .flag-ar{
   background-repeat: no-repeat;
