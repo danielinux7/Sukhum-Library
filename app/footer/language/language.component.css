@@ -1,0 +1,50 @@
+.dropdown{
+  position: absolute;
+  top: 1em;
+  right: 2em;
+}
+a{
+  color: #ffffff;
+}
+.dropdown-menu > li > a{
+  padding: 3px 5px;
+}
+a:hover, a:focus {
+  color: #c2c2c2;
+  text-decoration: none;
+}
+a:hover {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.dropdown-menu{
+  min-width: 50px
+}
+.flag-en{
+  background-image: url('/images/flags/en.png');
+  background-repeat: no-repeat;
+  /*background-size: 65%;*/
+  width: 30px;
+  height: 20px;
+}
+.flag-ru{
+  background-image: url('/images/flags/ru.png');
+  background-repeat: no-repeat;
+  /*background-size: 65%;*/
+  width: 30px;
+  height: 20px;
+}
+.flag-tr{
+  background-image: url('/images/flags/tr.png');
+  background-repeat: no-repeat;
+  /*background-size: 65%;*/
+  width: 30px;
+  height: 20px;
+}
+.flag-ar{
+  background-image: url('/images/flags/ar.png');
+  background-repeat: no-repeat;
+  /*background-size: 65%;*/
+  width: 30px;
+  height: 20px;
+}
