@@ -6,17 +6,36 @@ declare var $:any;
   templateUrl: './app/footer/language/language.component.html',
   styleUrls:  ['./app/footer/language/language.component.css'],
   pipes: [TranslatePipe],
-  providers: [TranslateService]
 })
 export class LanguageComponent implements OnInit{
-  lang = 'Russian';
-  code = 'ru';
+  lang = '';
+  code = '';
   ngOnInit() {
     $('.active')[0] !== undefined && $('.active')[0].removeAttribute('class','active');
-    $('#ru').closest('li').addClass('active');
+    $('#'+this.code).closest('li').addClass('active');
   }
   constructor(private translate: TranslateService) {
-    // console.log(translate);
+        var selectedCode = translate.currentLang;
+        if (selectedCode === 'en') {
+            this.lang = 'English';
+            this.code = selectedCode;
+        }
+        else if (selectedCode === 'ru') {
+            this.lang = 'Russian';
+            this.code = selectedCode;
+        }
+        else if (selectedCode === 'ab') {
+            this.lang = 'Abkhaz';
+            this.code = selectedCode;
+        }
+        else if (selectedCode === 'tr') {
+            this.lang = 'Turkish';
+            this.code = selectedCode;
+        }
+        else if (selectedCode === 'ar') {
+            this.lang = 'Arabic';
+            this.code = selectedCode;
+        }
  }
   selectLang(event) {
     $('.active')[0] !== undefined && $('.active')[0].removeAttribute('class','active');
