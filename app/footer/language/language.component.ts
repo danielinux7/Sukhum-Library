@@ -15,6 +15,7 @@ export class LanguageComponent implements OnInit{
     $('#'+this.code).closest('li').addClass('active');
   }
   constructor(private translate: TranslateService) {
+        this.translate = translate;
         var selectedCode = translate.currentLang;
         if (selectedCode === 'en') {
             this.lang = 'English';
@@ -65,5 +66,7 @@ export class LanguageComponent implements OnInit{
             this.code = selectedCode;
         }
     }
+    this.translate.resetLang(this.code);
+    this.translate.use(this.code);
   }
  }
