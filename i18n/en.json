@@ -20,5 +20,10 @@
     "calendar": "Calendar",
     "us": "About Us",
     "contacts": "Contacts",
-    "search": "Search"
+    "search": "Search",
+    "abkhaz": "Abkhaz",
+    "english": "English",
+    "russian": "Russian",
+    "turkish": "Turkish",
+    "arabic": "Arabic"
 }

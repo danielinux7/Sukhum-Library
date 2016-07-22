@@ -18,23 +18,23 @@ export class LanguageComponent implements OnInit{
         this.translate = translate;
         var selectedCode = translate.currentLang;
         if (selectedCode === 'en') {
-            this.lang = 'English';
+            this.lang = 'english';
             this.code = selectedCode;
         }
         else if (selectedCode === 'ru') {
-            this.lang = 'Russian';
+            this.lang = 'russian';
             this.code = selectedCode;
         }
         else if (selectedCode === 'ab') {
-            this.lang = 'Abkhaz';
+            this.lang = 'abkhaz';
             this.code = selectedCode;
         }
         else if (selectedCode === 'tr') {
-            this.lang = 'Turkish';
+            this.lang = 'turkish';
             this.code = selectedCode;
         }
         else if (selectedCode === 'ar') {
-            this.lang = 'Arabic';
+            this.lang = 'arabic';
             this.code = selectedCode;
         }
  }
@@ -46,27 +46,27 @@ export class LanguageComponent implements OnInit{
     selectedCode = $(event.target).closest('a').attr('id');
     if (selectedCode !== this.code) {
         if (selectedCode === 'en') {
-            this.lang = 'English';
+            this.lang = 'english';
             this.code = selectedCode;
             this.setLTR();
         }
         if (selectedCode === 'ru') {
-            this.lang = 'Russian';
+            this.lang = 'russian';
             this.code = selectedCode;
             this.setLTR();
         }
         if (selectedCode === 'ab') {
-            this.lang = 'Abkhaz';
+            this.lang = 'abkhaz';
             this.code = selectedCode;
             this.setLTR();
         }
         if (selectedCode === 'tr') {
-            this.lang = 'Turkish';
+            this.lang = 'turkish';
             this.code = selectedCode;
             this.setLTR();
         }
         if (selectedCode === 'ar') {
-            this.lang = 'Arabic';
+            this.lang = 'arabic';
             this.code = selectedCode;
             this.setRTL();
         }
@@ -78,11 +78,13 @@ export class LanguageComponent implements OnInit{
   setRTL(){
     $('lib-content') !== undefined && $('lib-content').addClass('rtl-dir');
     $('.app-rtl') !== undefined && $('.app-rtl').addClass('rtl-rotate');
+    $('.app-rtl .search') !== undefined && $('.app-rtl .search').addClass('rtl-dir');
   }
 
   setLTR(){
     $('lib-content') !== undefined && $('lib-content').removeClass('rtl-dir');
     $('.app-rtl') !== undefined && $('.app-rtl').removeClass('rtl-rotate');
+    $('.app-rtl .search') !== undefined && $('.app-rtl .search').removeClass('rtl-dir');
   }
 
  }

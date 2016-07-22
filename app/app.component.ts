@@ -36,6 +36,7 @@ export class AppComponent implements OnInit{
     setRTL(){
       $('lib-content') !== undefined && $('lib-content').addClass('rtl-dir');
       $('.app-rtl') !== undefined && $('.app-rtl').addClass('rtl-rotate');
+      $('.app-rtl .search') !== undefined && $('.app-rtl .search').addClass('rtl-dir');
     }
 
  }

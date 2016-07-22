@@ -15,6 +15,18 @@ lib-app{
   margin:0 15%;
 }
 
+.rtl-dir{
+  direction: rtl;
+}
+
+.rtl-rotate{
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
 @media (max-width: 1071px) {
   lib-app {
     margin: 0 10%;
