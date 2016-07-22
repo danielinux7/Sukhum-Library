@@ -31,6 +31,8 @@ a:hover {
 }
 .flag-en{
   background-image: url('/images/flags/en.png');
+  background-size: 250%;
+  background-position-y: -5px;
 }
 .flag-ru{
   background-image: url('/images/flags/ru.png');
@@ -44,4 +46,5 @@ a:hover {
 }
 .flag-ab{
   background-image: url('/images/flags/ab.gif');
+  background-size: 260%;
 }
