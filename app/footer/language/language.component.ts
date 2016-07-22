@@ -48,25 +48,41 @@ export class LanguageComponent implements OnInit{
         if (selectedCode === 'en') {
             this.lang = 'English';
             this.code = selectedCode;
+            this.setLTR();
         }
         if (selectedCode === 'ru') {
             this.lang = 'Russian';
             this.code = selectedCode;
+            this.setLTR();
         }
         if (selectedCode === 'ab') {
             this.lang = 'Abkhaz';
             this.code = selectedCode;
+            this.setLTR();
         }
         if (selectedCode === 'tr') {
             this.lang = 'Turkish';
             this.code = selectedCode;
+            this.setLTR();
         }
         if (selectedCode === 'ar') {
             this.lang = 'Arabic';
             this.code = selectedCode;
+            this.setRTL();
         }
     }
     this.translate.resetLang(this.code);
     this.translate.use(this.code);
   }
+
+  setRTL(){
+    $('lib-content') !== undefined && $('lib-content').addClass('rtl-dir');
+    $('.app-rtl') !== undefined && $('.app-rtl').addClass('rtl-rotate');
+  }
+
+  setLTR(){
+    $('lib-content') !== undefined && $('lib-content').removeClass('rtl-dir');
+    $('.app-rtl') !== undefined && $('.app-rtl').removeClass('rtl-rotate');
+  }
+
  }

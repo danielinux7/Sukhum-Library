@@ -1,7 +1,17 @@
-/*To do...this is not a good way to keep the footer at the bottom of the page!*/
-lib-content{
-  min-height: 50%;
+lib-content, lib-nav, lib-header, lib-footer{
   display: block;
+}
+
+.rtl-rotate{
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.rtl-dir{
+  direction: rtl;
 }
 
 @media (max-width: 616px) {}
