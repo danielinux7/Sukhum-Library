@@ -10,3 +10,4 @@ app/*/*/*.*.js.map
 node_modules/*
 typings/*
 *.pem
+npm-debug.log
