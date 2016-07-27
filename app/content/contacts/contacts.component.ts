@@ -29,7 +29,6 @@ export class ContactsComponent {
 
   constructor(translate: TranslateService) {
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
-      console.log(translate.currentLang);
       if (translate.currentLang === 'ru') {
           this.html = this.html_ru;
       }

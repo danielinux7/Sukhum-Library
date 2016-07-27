@@ -9,6 +9,7 @@ import {
   ViewContainerRef,
 
 } from '@angular/core'
+declare var $:any;
 
 export function createComponentFactory(resolver: ComponentResolver, metadata: ComponentMetadata): Promise<ComponentFactory<any>> {
     const cmpClass = class DynamicComponent {};
@@ -27,7 +28,7 @@ export class DynamicHTMLOutlet {
 
   ngOnChanges() {
     if (!this.src) return;
-
+    $('dynamic-html') && $('dynamic-html').remove();
     const metadata = new ComponentMetadata({
         selector: 'dynamic-html',
         template: this.src,
