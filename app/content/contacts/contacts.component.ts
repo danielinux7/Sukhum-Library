@@ -25,9 +25,17 @@ export class ContactsComponent {
    Director of the National Library - Boris Shalikovich Cholariya<p></p>
   </div>`;
 
-  html = this.html_en;
+  html: string;
 
   constructor(translate: TranslateService) {
+    
+    if (translate.currentLang === 'ru') {
+        this.html = this.html_ru;
+    }
+    else if (translate.currentLang === 'en') {
+        this.html = this.html_en;
+    }
+
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
       if (translate.currentLang === 'ru') {
           this.html = this.html_ru;
