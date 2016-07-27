@@ -7,12 +7,21 @@ import { DynamicHTMLOutlet } from './../../directives/dynamic-html-outlet/dynami
   directives: [DynamicHTMLOutlet]
 })
 export class ContactsComponent {
-  html = `<div>
+  html_ru = `<div>
   <p align="justify">Почтовый индекс: 384900; Республика Абхазия, г. Сухум, ул. Лакоба, д. 111.<br>
   Тел.: </p><ul><li>(8-10-995)442-664-15
   </li><li>(8-10-995)442-624-41</li></ul>
   Для корреспонденции: 354000; Российская Федерация, Краснодарский край, г. Сочи, ул. Воровского, д.1, почтампта, а/я 964<br>
   Директор Национальной библиотеки - Борис Шаликович Чолария.<p></p>
-
   </div>`;
+
+  html_en = `<div>
+  <p align="justify"> Postal Code: 384900; The Republic of Abkhazia, Sukhum, ul. Lakoba, d. 111.<br>
+  Tel.: </p><ul><li>(8-10-995)442-664-15
+  </li><li>(8-10-995)442-624-41</li></ul>
+  For correspondence: 354000; Russian Federation, Krasnodar, Sochi, UL. Vorovskogo, 1, BT, and / I 964<br>
+   Director of the National Library - Boris Shalikovich Cholariya<p></p>
+  </div>`;
+
+  html = this.html_en;
 }
