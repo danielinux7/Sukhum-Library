@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { DynamicHTMLOutlet } from './../../directives/dynamic-html-outlet/dynamicHtmlOutlet.directive';
+import { TranslateService, LangChangeEvent } from 'ng2-translate/ng2-translate';
+
 @Component({
   selector: 'lib-contacts',
   templateUrl: './app/content/contacts/contacts.component.html',
@@ -24,4 +26,18 @@ export class ContactsComponent {
   </div>`;
 
   html = this.html_en;
+
+  constructor(translate: TranslateService) {
+    translate.onLangChange.subscribe((event: LangChangeEvent) => {
+      console.log(translate.currentLang);
+      if (translate.currentLang === 'ru') {
+          this.html = this.html_ru;
+      }
+      else if (translate.currentLang === 'en') {
+          this.html = this.html_en;
+      }
+
+    });
+  }
+
 }
