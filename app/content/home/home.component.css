@@ -1,6 +1,16 @@
 .home-library1, .home-library2, .home-library3, .home-library4, .home-library5, .home-library6{
   height: 500px;
   background-repeat: no-repeat;
+  border-radius: 15px;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  box-shadow: 1px 1px 50px 1px #4e3811;
+  -moz-box-shadow: 1px 1px 50px 1px #4e3811;
+  -webkit-box-shadow: 1px 1px 50px 1px #4e3811;
+  -o-box-shadow: 1px 1px 50px 1px #4e3811;
 }
 .home-library1{
   background-image: url('/images/library1.jpg');
@@ -24,4 +34,8 @@
 
 .home-library6{
   background-image: url('/images/library6.jpg');
+}
+
+.panel-title {
+  text-align: center;
 }
