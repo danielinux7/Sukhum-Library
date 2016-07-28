@@ -15,6 +15,16 @@ lib-app{
   margin:0 15%;
 }
 
+.v4-tease {
+    display: block;
+    padding: 15px 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background-color: #3c763d;
+    text-decoration: none;
+}
+
 .rtl-dir{
   direction: rtl;
 }
