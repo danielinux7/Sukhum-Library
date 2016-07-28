@@ -15,8 +15,17 @@ lib-app{
   background-color: #fff;
 }
 
-body{
+.bg{
+  height:100%;
+  width:100%
   padding:0 15%;
+  background-image: url('/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
 }
 
 .rtl-dir{
@@ -32,18 +41,18 @@ body{
 }
 
 @media (max-width: 1071px) {
-  body {
+  .bg {
     padding: 0 10%;
   }
 
 @media (max-width: 936px) {
-  body {
+  .bg {
     padding: 0 5%;
   }
 }
 
 @media (max-width: 833px) {
-  body {
+  .bg {
     padding: 0;
   }
 }
