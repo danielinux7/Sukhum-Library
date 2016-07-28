@@ -1,4 +1,4 @@
-.home-library1, .home-library2, .home-library3, .home-library4, .home-library5, .home-library6{
+.home-library1, .home-library2, .home-library3, .home-library4, .home-library5, .home-library6, .home-library7, .home-library8, .home-library9{
   height: 500px;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -34,6 +34,15 @@
 
 .home-library6{
   background-image: url('/images/library6.jpg');
+}
+.home-library7{
+  background-image: url('/images/library7.jpg');
+}
+.home-library8{
+  background-image: url('/images/library8.jpg');
+}
+.home-library9{
+  background-image: url('/images/library9.jpg');
 }
 
 .panel-title {
