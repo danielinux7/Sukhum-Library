@@ -25,5 +25,6 @@
     "english": "English",
     "russian": "Russian",
     "turkish": "Turkish",
-    "arabic": "Arabic"
+    "arabic": "Arabic",
+    "disabledFeaturesMessage":"Disabled features are coming soon!"
 }

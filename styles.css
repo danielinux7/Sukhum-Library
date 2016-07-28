@@ -12,17 +12,11 @@ lib-app{
   border-right: 1px solid #FEB35D;
   border-radius: 0 0 10px 10px;
   display: block;
-  margin:0 15%;
+  background-color: #fff;
 }
 
-.v4-tease {
-    display: block;
-    padding: 15px 20px;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-    background-color: #3c763d;
-    text-decoration: none;
+body{
+  padding:0 15%;
 }
 
 .rtl-dir{
@@ -38,18 +32,18 @@ lib-app{
 }
 
 @media (max-width: 1071px) {
-  lib-app {
-    margin: 0 10%;
+  body {
+    padding: 0 10%;
   }
 
 @media (max-width: 936px) {
-  lib-app {
-    margin: 0 5%;
+  body {
+    padding: 0 5%;
   }
 }
 
 @media (max-width: 833px) {
-  lib-app {
-    margin: 0;
+  body {
+    padding: 0;
   }
 }

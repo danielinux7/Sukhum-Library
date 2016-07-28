@@ -25,5 +25,6 @@
 "english": "الإنجليزية",
 "russian": "الروسية",
 "turkish": "التركية",
-"arabic": "العربية"
+"arabic": "العربية",
+"disabledFeaturesMessage":"!سيتم تفعيل الوظائف غير العاملة قريبا"
 }
