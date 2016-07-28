@@ -3,6 +3,9 @@
   font-size: 18px;
 }
 
+.navbar{
+  margin-bottom: 0;
+}
 @media (min-width: 768px) {
   .navbar-main .navbar-collapse {
     padding-left: 0;

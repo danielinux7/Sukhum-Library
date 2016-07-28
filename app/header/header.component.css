@@ -1,4 +1,5 @@
 header {
+  position:relative;
   padding: 0 1em 1em 1em;
   background-color: #FFE0BC;
   border-bottom: 1px solid #FEB35D;
