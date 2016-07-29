@@ -16,6 +16,10 @@ lib-app{
   background-color: #fff;
 }
 
+body.lib-body{
+  font-family: Times New Roman, sans-serif;
+}
+
 .bg{
   position:fixed;
   height:100%;
