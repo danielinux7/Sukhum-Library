@@ -16,6 +16,12 @@ lib-app{
   background-color: #fff;
 }
 
+.disabled{
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.4;
+}
+
 body.lib-body{
   font-family: Times New Roman, sans-serif;
 }
