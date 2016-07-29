@@ -1,5 +1,5 @@
 {
   "port": 8000,
   "browser": "google chrome",
-  "tunnel": true
+  "tunnel": false
 }

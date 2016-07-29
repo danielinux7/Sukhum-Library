@@ -2,14 +2,24 @@ lib-content, lib-nav, lib-header, lib-footer{
   display: block;
 }
 
-lib-content{
-  padding-left: 1em;
-  padding-right: 1em;
+.v4-tease {
+    position: relative;
+    display: block;
+    padding: 15px 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background-color: #3c763d;
+    text-decoration: none;
 }
 
-@media (max-width: 767px) {
-  lib-content{
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-  }
+.v4-tease:hover, .v4-tease:focus {
+  color: #fff;
+  background-color: #3b8284;
+  text-decoration: none;
+}
+
+.v4-tease, .v4-tease:hover {
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
 }

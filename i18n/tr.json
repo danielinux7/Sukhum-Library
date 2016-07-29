@@ -25,5 +25,6 @@
 "english": "İngilizce",
 "russian": "Rusça",
 "turkish": "Türk",
-"arabic": "Arapça"
+"arabic": "Arapça",
+"disabledFeaturesMessage":"Sigara çalışma fonksiyonları yakında olacak!"
 }

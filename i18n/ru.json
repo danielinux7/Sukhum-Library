@@ -25,5 +25,6 @@
   "english": "Английский",
   "russian": "Русский",
   "turkish": "Турецкий",
-  "arabic": "Арабский"
+  "arabic": "Арабский",
+  "disabledFeaturesMessage":"Обновление функций в ближайшее время!"
 }
