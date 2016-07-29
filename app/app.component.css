@@ -3,7 +3,7 @@ lib-content, lib-nav, lib-header, lib-footer{
 }
 
 .v4-tease {
-  position: relative;
+    position: relative;
     display: block;
     padding: 15px 20px;
     font-weight: 700;
@@ -11,10 +11,6 @@ lib-content, lib-nav, lib-header, lib-footer{
     text-align: center;
     background-color: #3c763d;
     text-decoration: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 1;
 }
 
 .v4-tease:hover, .v4-tease:focus {
