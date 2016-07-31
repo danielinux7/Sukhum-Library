@@ -2,6 +2,18 @@ lib-content, lib-nav, lib-header, lib-footer{
   display: block;
 }
 
+lib-nav{
+  font-size: 17px;
+}
+
+lib-content{
+  font-size: 15px;
+}
+
+lib-footer{
+  font-family: sans-serif;
+}
+
 .v4-tease {
     position: relative;
     display: block;
@@ -22,4 +34,13 @@ lib-content, lib-nav, lib-header, lib-footer{
 .v4-tease, .v4-tease:hover {
     -webkit-transition-duration: 1s; /* Safari */
     transition-duration: 1s;
+}
+
+@media (max-width: 767px) {
+  lib-nav{
+    font-size: 14px;
+  }
+  lib-footer{
+    font-size: 0.8em;
+  }
 }
