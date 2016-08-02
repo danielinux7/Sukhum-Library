@@ -5,13 +5,13 @@ To setup the repo good and running on your need machine. You will need node = 4.
 
 ##To setup an ubuntu server on aws- Amazon services:
 
-#### sudo su
-#### get-apt update
-#### get-apt install npm git apache2
-#### ln -s /usr/bin/nodejs /usr/bin/node
-#### npm install npm -g
-#### In /var/www folder, git clone https://github.com/danielinux7/Sukhum-Library.git
-#### rm -rf html
-#### mv <repo_dir> html
-#### npm install - while in your repo root directory.
-#### service apache2 restart
+#### <code>sudo su</code>
+#### <code>get-apt update</code>
+#### <code>get-apt install npm git apache2</code>
+#### <code>ln -s /usr/bin/nodejs /usr/bin/node</code>
+#### <code>npm install npm -g</code>
+#### Inside /var/www folder, <code>git clone https://github.com/danielinux7/Sukhum-Library.git</code>
+#### <code>rm -rf html</code>
+#### <code>mv <repo_dir> html</code>
+#### <code>npm install</code> - while in your repo root directory.
+#### <code>service apache2 restart</code>
