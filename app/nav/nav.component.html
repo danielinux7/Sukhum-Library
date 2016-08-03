@@ -15,8 +15,8 @@
       <ul class="nav navbar-nav">
         <li class="active"><a class="nav-home" [routerLink]="['/home']"><span class="glyphicon glyphicon-home"></span></a></li>
         <li><a class="app-rtl" [routerLink]="['/news']">{{'news' | translate}}</a></li>
-        <li><a class="app-rtl" href="#">{{'calendar' | translate}}</a></li>
-        <li><a class="app-rtl" href="#">{{'us' | translate}}</a></li>
+        <li class="disabled"><a class="app-rtl" href="#">{{'calendar' | translate}}</a></li>
+        <li class="disabled"><a class="app-rtl" href="#">{{'us' | translate}}</a></li>
         <li><a class="app-rtl" [routerLink]="['/contacts']">{{'contacts' | translate}}</a></li>
       </ul>
       <!-- <div class="nav navbar-nav dropdown">
@@ -31,7 +31,7 @@
           <li><a href="#">Выход</a></li>
         </ul>
       </div> -->
-      <form class="navbar-form navbar-right" role="search">
+      <form class="navbar-form navbar-right disabled" role="search">
         <div class="form-group">
           <input type="text" class="form-control app-rtl search" placeholder="{{'search' | translate}}">
         </div>

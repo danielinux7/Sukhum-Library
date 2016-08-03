@@ -5,7 +5,7 @@ import { enableProdMode } from '@angular/core';
 import { AppComponent } from './app.component';
 import { appRouterProviders } from './app.routes';
 
-// enableProdMode();
+enableProdMode();
 bootstrap(AppComponent, [
   appRouterProviders, HTTP_PROVIDERS,
   {

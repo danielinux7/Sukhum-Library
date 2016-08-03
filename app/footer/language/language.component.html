@@ -1,10 +1,10 @@
 <div class="nav navbar-nav dropdown app-rtl">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon flag-{{code}}"></span> {{ lang | translate }} <span class="caret"></span></a>
   <ul (click)="selectLang($event)" class="dropdown-menu">
-    <li><a id="ab"><span class="glyphicon flag-ab"></span> {{'abkhaz' | translate }}</a></li>
-    <li><a id="en"><span class="glyphicon flag-en"></span> {{'english' | translate }}</a></li>
+    <li class="disabled"><a id="ab"><span class="glyphicon flag-ab"></span> {{'abkhaz' | translate }}</a></li>
+    <li class="disabled"><a id="en"><span class="glyphicon flag-en"></span> {{'english' | translate }}</a></li>
     <li><a id="ru"><span class="glyphicon flag-ru"></span> {{'russian' | translate }}</a></li>
-    <li><a id="tr"><span class="glyphicon flag-tr"></span> {{'turkish' | translate }}</a></li>
-    <li><a id="ar"><span class="glyphicon flag-ar"></span> {{'arabic' | translate }}</a></li>
+    <li class="disabled"><a id="tr"><span class="glyphicon flag-tr"></span> {{'turkish' | translate }}</a></li>
+    <li class="disabled"><a id="ar"><span class="glyphicon flag-ar"></span> {{'arabic' | translate }}</a></li>
   </ul>
 </div>
