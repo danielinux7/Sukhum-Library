@@ -9,8 +9,6 @@ section, article, aside, footer, header, nav, hgroup {
 
 lib-app{
   padding:0 15%;
-  border-left: 1px solid #FEB35D;
-  border-right: 1px solid #FEB35D;
   border-radius: 0 0 10px 10px;
   display: block;
   background-color: #fff;
@@ -68,6 +66,12 @@ body.lib-body{
     padding: 0;
   }
   .bg{
-    background-image: none;
-  }
+    background-image: url('/images/gears.gif');
+    background-repeat: no-repeat;
+    background-size: initial;
+    -moz-background-size: initial;
+    -webkit-background-size: initial;
+    -o-background-size: initial;
+    background-position: 50%;
+    }
 }
