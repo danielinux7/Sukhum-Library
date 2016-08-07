@@ -75,3 +75,16 @@ body.lib-body{
     background-position: 50%;
     }
 }
+
+/*Calendar*/
+@media (max-width: 616px) {
+  #calendar .fc-basic-view .fc-body .fc-row {
+      min-height: 2.75em;
+  }
+  .fc-toolbar {
+    font-size: 0.7em;
+  }
+  .fc-toolbar .fc-left h2{
+    font-size: 1.7em;
+  }
+}
