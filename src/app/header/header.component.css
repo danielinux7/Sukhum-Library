@@ -1,0 +1,41 @@
+header {
+  position:relative;
+  padding: 0 1em 1em 1em;
+  border-bottom: 1px solid #FEB35D;
+  background: #fceabb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fceabb 0%, #f8b500 0%, #fbdf93 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #fceabb 0%,#f8b500 0%,#fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #fceabb 0%,#f8b500 0%,#fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+}
+
+header:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+header h1 {
+  width: 85%;
+  text-align: center;
+  padding-top: 0.9em;
+  margin-top: 0;
+  font-size: 2.25em;
+  color: #555;
+}
+
+.abkhaz-gerb {
+  float:left;
+  width: 70px;
+  height: 100px;
+  background-image: url('/images/gerb.gif');
+  background-repeat: no-repeat;
+  border-radius: 0 0 45px 45px;
+}
+
+@media (max-width: 616px) {
+  header h1 {
+    font-size: 1.6em;
+    width: 90%;
+  }
+}

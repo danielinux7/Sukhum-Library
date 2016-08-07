@@ -1,0 +1,77 @@
+@font-face {
+font-family: 'Apsni';
+src: url('./fonts/Apsni.ttf')  format('truetype');
+}
+
+section, article, aside, footer, header, nav, hgroup {
+  display:block;
+}
+
+lib-app{
+  padding:0 15%;
+  border-radius: 0 0 10px 10px;
+  display: block;
+  background-color: #fff;
+}
+
+.disabled{
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.4;
+}
+
+body.lib-body{
+  font-family: Times New Roman, sans-serif;
+}
+
+.bg{
+  position:fixed;
+  height:100%;
+  width:100%;
+  background-color: #fff;
+  background-image: url('/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+}
+
+.rtl-dir{
+  direction: rtl;
+}
+
+.rtl-rotate{
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+@media (max-width: 1071px) {
+  lib-app {
+    padding: 0 10%;
+  }
+
+@media (max-width: 936px) {
+  lib-app {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 833px) {
+  lib-app {
+    padding: 0;
+  }
+  .bg{
+    background-image: url('/images/gears.gif');
+    background-repeat: no-repeat;
+    background-size: initial;
+    -moz-background-size: initial;
+    -webkit-background-size: initial;
+    -o-background-size: initial;
+    background-position: 50%;
+    }
+}
