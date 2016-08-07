@@ -67,6 +67,9 @@ a:hover {
 }
 
 @media (max-width: 616px) {
+  ul{
+    padding-left: 0.5em;
+  }
   .main {
     width:auto;
   }
