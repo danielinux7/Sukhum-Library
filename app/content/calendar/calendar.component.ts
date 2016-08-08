@@ -27,7 +27,7 @@ export class CalendarComponent implements OnInit{
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
       $('#calendar').fullCalendar( 'destroy' );
       $('#calendar').fullCalendar({
-          lang: this.lang,
+          lang: translate.currentLang,
           googleCalendarApiKey: 'AIzaSyCFf8H7WgYP6W3NPI8z0xRw9N0VAel4Ha4',
           events: {
               googleCalendarId: 'popf6dff8ve62nrc18aunt4nsc@group.calendar.google.com'
