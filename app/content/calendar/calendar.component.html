@@ -1,15 +1,21 @@
-<div id='calendar'></div>
-<div id="event-detail">
-  <div class="summary">
-    {{currentEvent.summary}}
-  </div>
-  <div class="description">
-    {{ currentEvent.description}}
-  </div>
-  <div class="location">
-    {{ currentEvent.location}}
-  </div>
-  <div class="date-time">
-    {{ currentEvent.start.dateTime}} - {{ currentEvent.end.dateTime}}
+<div id="calendar-container">
+  <div id='calendar'></div>
+  <div id="event-detail">
+    <div class="event-detail-section">
+      <h3>Event Title</h3>
+      {{currentEvent.summary}}
+    </div>
+    <div class="event-detail-section">
+      <h4>Event Description</h4>
+      {{ currentEvent.description}}
+    </div>
+    <div class="event-detail-section">
+      <h4>Event Location</h4>
+      {{ currentEvent.location}}
+    </div>
+    <div class="event-detail-section">
+      <h4>Event Time</h4>
+      {{ currentEvent.start.dateTime}}  {{ currentEvent.end.dateTime}}
+    </div>
   </div>
 </div>

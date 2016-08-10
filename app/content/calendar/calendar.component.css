@@ -1,0 +1,17 @@
+@media (min-width: 616px) {
+  #calendar-container{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+  }
+
+  #event-detail{
+    padding: 1em;
+    min-width: 35%;
+  }
+
+  .event-detail-section{
+    min-height: 4em;
+  }
+}
