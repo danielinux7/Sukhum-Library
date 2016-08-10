@@ -1,1 +1,15 @@
 <div id='calendar'></div>
+<div id="event-detail">
+  <div class="summary">
+    {{currentEvent.summary}}
+  </div>
+  <div class="description">
+    {{ currentEvent.description}}
+  </div>
+  <div class="location">
+    {{ currentEvent.location}}
+  </div>
+  <div class="date-time">
+    {{ currentEvent.start.dateTime}} - {{ currentEvent.end.dateTime}}
+  </div>
+</div>

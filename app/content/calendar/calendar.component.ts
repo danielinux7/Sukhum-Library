@@ -10,18 +10,19 @@ declare var $:any;
 })
 export class CalendarComponent implements OnInit{
   lang: string;
-  events: any;
   errorMessage: string;
-  mode = 'Observable';
+  currentEvent = {start:'', end:''};
 
   ngOnInit (){
-    this.getEvents();
-
     $('#calendar').fullCalendar({
         lang: this.lang,
         googleCalendarApiKey: 'AIzaSyCFf8H7WgYP6W3NPI8z0xRw9N0VAel4Ha4',
         events: {
             googleCalendarId: 'popf6dff8ve62nrc18aunt4nsc@group.calendar.google.com'
+        },
+        eventClick: (calEvent, jsEvent, view) => {
+          this.getEvent(calEvent.id.split('_')[0]);
+          return false;
         }
     });
   }
@@ -36,16 +37,20 @@ export class CalendarComponent implements OnInit{
           googleCalendarApiKey: 'AIzaSyCFf8H7WgYP6W3NPI8z0xRw9N0VAel4Ha4',
           events: {
               googleCalendarId: 'popf6dff8ve62nrc18aunt4nsc@group.calendar.google.com'
+          },
+          eventClick: (calEvent, jsEvent, view) => {
+            this.getEvent(calEvent.id.split('_')[0]);
+            return false;
           }
       });
 
     });
   }
 
-  getEvents() {
-     this.eventService.getEvents()
+  getEvent(id:string) {
+     this.eventService.getEvent(id)
                      .subscribe(
-                       events => {this.events = events;console.log(this.events);},
+                       currentEvent => this.currentEvent = currentEvent ,
                        error =>  this.errorMessage = <any>error);
   }
 
