@@ -5,7 +5,7 @@ import { Observable }     from 'rxjs/Observable';
 @Injectable()
 export class EventService {
   constructor (private http: Http) {}
-  private eventsUrl = 'https://graph.facebook.com/v2.7/631241557059261/events?access_token=EAACEdEose0cBAEKnwZCw6bdNMMhtLZAKD4mMd4LmKEqZAZCdHyydDOKZBSZAbQkoT7olnK0xb3reUJpzZA2Hv6jCU4MpwZAZApFIhFnZCoMhhrT0K9KVouSCWEZCu8un8RH0vuqtTuZB0EECuaoiZCeGVfZBZABvyZAA0tjkilQCotXAdeqpeAZDZD';  // URL to web API
+  private eventsUrl = 'https://www.googleapis.com/calendar/v3/calendars/popf6dff8ve62nrc18aunt4nsc@group.calendar.google.com/events?key=AIzaSyCFf8H7WgYP6W3NPI8z0xRw9N0VAel4Ha4';  // URL to web API
   getEvents (): Observable<any> {
     return this.http.get(this.eventsUrl)
                     .map(this.extractData)
@@ -13,7 +13,7 @@ export class EventService {
   }
   private extractData(res: Response) {
     let body = res.json();
-    return body.data || { };
+    return body.items || { };
   }
   private handleError (error: any) {
     // In a real world app, we might use a remote logging infrastructure
