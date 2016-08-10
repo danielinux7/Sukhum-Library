@@ -26,5 +26,10 @@
 "russian": "Rusça",
 "turkish": "Türk",
 "arabic": "Arapça",
-"disabledFeaturesMessage":"Sigara çalışma fonksiyonları yakında olacak!"
+"disabledFeaturesMessage":"Sigara çalışma fonksiyonları yakında olacak!",
+"eventTitleHeader": "Olay Başlık",
+"event": "Olay",
+"eventLocation": "Olay Konum",
+"eventTime": "Olay Zaman",
+"eventDescription": "Olay Açıklama"
 }

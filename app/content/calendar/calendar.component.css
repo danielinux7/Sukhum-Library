@@ -1,0 +1,29 @@
+@media (min-width: 616px) {
+  h3, h4 {
+    margin: 0;
+  }
+
+  #calendar-container{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+  }
+
+  #event-detail{
+    padding: 1em;
+    margin-left: 1em;
+    min-width: 35%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .event-detail-section{
+    padding: 0.5em;
+    margin-bottom: 1em;
+    min-height: 4em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+}
