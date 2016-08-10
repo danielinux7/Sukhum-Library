@@ -26,5 +26,10 @@
     "russian": "Russian",
     "turkish": "Turkish",
     "arabic": "Arabic",
-    "disabledFeaturesMessage":"Disabled features are coming soon!"
+    "disabledFeaturesMessage":"Disabled features are coming soon!",
+    "eventTitleHeader": "Event Title",
+    "event": "Event",
+    "eventLocation": "Event Location",
+    "eventTime": "Event Time",
+    "eventDescription": "Event Description"
 }

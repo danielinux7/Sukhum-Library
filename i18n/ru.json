@@ -26,5 +26,10 @@
   "russian": "Русский",
   "turkish": "Турецкий",
   "arabic": "Арабский",
-  "disabledFeaturesMessage":"Обновление функций в ближайшее время!"
+  "disabledFeaturesMessage":"Обновление функций в ближайшее время!",
+  "eventTitleHeader": "Событие Название",
+  "event": "Событие",
+  "eventLocation": "Событие Расположение",
+  "eventTime": "Событие Время",
+  "eventDescription": "Событие Описание"
 }

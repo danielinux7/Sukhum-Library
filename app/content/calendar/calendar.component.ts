@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService, LangChangeEvent } from 'ng2-translate/ng2-translate';
+import { TranslateService, TranslatePipe, LangChangeEvent } from 'ng2-translate/ng2-translate';
 import { EventService } from './../../services/event.service'
 declare var $:any;
 
 @Component({
   selector: 'lib-calendar',
   templateUrl: './app/content/calendar/calendar.component.html',
-  styleUrls:  ['./app/content/calendar/calendar.component.css']
+  styleUrls:  ['./app/content/calendar/calendar.component.css'],
+  pipes: [TranslatePipe]
 })
 export class CalendarComponent implements OnInit{
   lang: string;

@@ -26,5 +26,10 @@
 "russian": "الروسية",
 "turkish": "التركية",
 "arabic": "العربية",
-"disabledFeaturesMessage":"!سيتم تفعيل الوظائف غير العاملة قريبا"
+"disabledFeaturesMessage":"!سيتم تفعيل الوظائف غير العاملة قريبا",
+"eventTitleHeader": "عنوان الحدث",
+"event": "الحدث",
+"eventLocation": "موقع الحدث",
+"eventTime": "وقت الحدث",
+"eventDescription": "وصف الحدث"
 }
