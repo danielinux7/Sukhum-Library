@@ -1,9 +1,12 @@
+// Add the RxJS Observable operators we need in this app.
+import './rxjs-operators';
 import { Component, OnInit } from '@angular/core';
 import {TRANSLATE_PROVIDERS, TranslateService, TranslatePipe, TranslateLoader, TranslateStaticLoader} from 'ng2-translate/ng2-translate';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
+import { EventService } from './services/event.service'
 declare var $:any;
 @Component({
   selector: 'lib-app',
@@ -11,7 +14,7 @@ declare var $:any;
   styleUrls:  ['./app/app.component.css'],
   pipes: [TranslatePipe],
   directives:[HeaderComponent, NavComponent, ContentComponent, FooterComponent],
-  providers: [TranslateService]
+  providers: [TranslateService, EventService]
 })
 export class AppComponent implements OnInit{
   userLang = 'en';

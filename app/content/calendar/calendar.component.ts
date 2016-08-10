@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, LangChangeEvent } from 'ng2-translate/ng2-translate';
+import { EventService } from './../../services/event.service'
 declare var $:any;
 
 @Component({
@@ -9,8 +10,12 @@ declare var $:any;
 })
 export class CalendarComponent implements OnInit{
   lang: string;
+  events: any;
+  errorMessage: string;
+  mode = 'Observable';
 
   ngOnInit (){
+    this.getEvents();
 
     $('#calendar').fullCalendar({
         lang: this.lang,
@@ -21,7 +26,7 @@ export class CalendarComponent implements OnInit{
     });
   }
 
-  constructor(translate: TranslateService) {
+  constructor(translate: TranslateService, private eventService: EventService ) {
     this.lang =  translate.currentLang;
 
     translate.onLangChange.subscribe((event: LangChangeEvent) => {
@@ -35,6 +40,13 @@ export class CalendarComponent implements OnInit{
       });
 
     });
+  }
+
+  getEvents() {
+     this.eventService.getEvents()
+                     .subscribe(
+                       events => {this.events = events;console.log(this.events);},
+                       error =>  this.errorMessage = <any>error);
   }
 
 }
