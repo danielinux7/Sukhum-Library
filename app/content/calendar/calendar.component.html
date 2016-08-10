@@ -1,1 +1,21 @@
-<div id='calendar'></div>
+<div id="calendar-container">
+  <div id='calendar'></div>
+  <div id="event-detail">
+    <div class="event-detail-section">
+      <h3>{{'eventTitleHeader' | translate}}</h3>
+      {{currentEvent.summary}}
+    </div>
+    <div class="event-detail-section">
+      <h4>{{'eventDescription' | translate}}</h4>
+      {{ currentEvent.description}}
+    </div>
+    <div class="event-detail-section">
+      <h4>{{'eventLocation' | translate}}</h4>
+      {{ currentEvent.location}}
+    </div>
+    <div class="event-detail-section">
+      <h4>{{'eventTime' | translate}}</h4>
+      {{ currentEvent.start.dateTime}}  {{ currentEvent.end.dateTime}}
+    </div>
+  </div>
+</div>
