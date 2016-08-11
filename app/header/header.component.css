@@ -1,12 +1,15 @@
 header {
+  height:45%;
   position:relative;
   padding: 0 1em 1em 1em;
   border-bottom: 1px solid #FEB35D;
-  background: #fceabb; /* Old browsers */
-  background: -moz-linear-gradient(top,  #fceabb 0%, #f8b500 0%, #fbdf93 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #fceabb 0%,#f8b500 0%,#fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #fceabb 0%,#f8b500 0%,#fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+  background-image: url('/images/deadman.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  /*background-position: center center;*/
 }
 
 header:after {
@@ -37,5 +40,9 @@ header h1 {
   header h1 {
     font-size: 1.6em;
     width: 90%;
+  }
+
+  header{
+    height: auto;
   }
 }
