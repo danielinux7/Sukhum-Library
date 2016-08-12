@@ -3,7 +3,7 @@ header {
   position:relative;
   padding: 0 1em 1em 1em;
   border-bottom: 1px solid #FEB35D;
-  background-image: url('/images/deadman.jpg');
+  background-image: url('/images/mountain.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
@@ -43,5 +43,12 @@ header h1 {
 
   header{
     height: auto;
+    background-image: url('/images/mountain-sm.jpg');
+  }
+
+  .abkhaz-gerb {
+    width: 75px;
+    height: 94px;
+    background-image: url('/images/gerb-sm.png');
   }
 }
