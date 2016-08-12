@@ -3,13 +3,13 @@ header {
   position:relative;
   padding: 0 1em 1em 1em;
   border-bottom: 1px solid #FEB35D;
-  background-image: url('/images/deadman.png');
+  background-image: url('/images/deadman.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  /*background-position: center center;*/
+  background-position: center center;
 }
 
 header:after {
@@ -29,11 +29,10 @@ header h1 {
 
 .abkhaz-gerb {
   float:left;
-  width: 70px;
-  height: 100px;
-  background-image: url('/images/gerb.gif');
+  width: 120px;
+  height: 150px;
+  background-image: url('/images/gerb.png');
   background-repeat: no-repeat;
-  border-radius: 0 0 45px 45px;
 }
 
 @media (max-width: 616px) {
