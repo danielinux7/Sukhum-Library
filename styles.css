@@ -8,10 +8,13 @@ section, article, aside, footer, header, nav, hgroup {
 }
 
 lib-app{
-  padding:0 15%;
   border-radius: 0 0 10px 10px;
   display: block;
   background-color: #fff;
+}
+
+.main-container{
+  padding:0 15%;
 }
 
 .disabled{
@@ -51,18 +54,18 @@ body.lib-body{
 }
 
 @media (max-width: 1071px) {
-  lib-app {
+  .main-container {
     padding: 0 10%;
   }
 
 @media (max-width: 936px) {
-  lib-app {
+  .main-container {
     padding: 0 5%;
   }
 }
 
 @media (max-width: 833px) {
-  lib-app {
+  .main-container {
     padding: 0;
   }
   .bg{

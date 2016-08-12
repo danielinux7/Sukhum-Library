@@ -3,6 +3,10 @@
   font-size: 18px;
 }
 
+nav {
+  padding: 0 15%;
+}
+
 .navbar{
   margin-bottom: 0;
 }
@@ -23,8 +27,9 @@
     border:none;
   }
   .navbar-default .navbar-toggle {
-    background-color: #f9ce9c;
+    background-color: #efa24a;
     border-color: #dbbb69;
+    margin-top: 1.5em;
   }
   /*.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #FFE0BC;
@@ -38,5 +43,22 @@
   }
   .navbar-main {
     border-bottom: 1px solid #FEB35D;
+  }
+}
+
+@media (max-width: 1071px) {
+  nav {
+    padding: 0 10%;
+  }
+
+@media (max-width: 936px) {
+  nav {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 833px) {
+  nav {
+    padding: 0;
   }
 }
