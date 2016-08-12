@@ -20,7 +20,6 @@ export class AppComponent implements OnInit{
   userLang = 'en';
 
   ngOnInit (){
-    $('.v4-tease').remove().insertAfter('.bg');
     if (this.userLang === 'ar') {
         this.setRTL();
     }
