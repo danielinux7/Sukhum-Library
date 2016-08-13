@@ -28,11 +28,14 @@ export class ContactsComponent {
    Director of the National Library - Boris Shalikovich Cholariya<p></p>
   </div>`;
   html_ab = `<div>
-  <p align="justify"> Postal Code: 384900; The Republic of Abkhazia, Sukhum, ul. Lakoba, d. 111.<br>
-  Tel.: </p><ul><li>(8-10-995)442-664-15
-  </li><li>(8-10-995)442-624-41</li></ul>
-  For correspondence: 354000; Russian Federation, Krasnodar, Sochi, UL. Vorovskogo, 1, BT, and / I 964<br>
-   Director of the National Library - Boris Shalikovich Cholariya<p></p>
+  <p align="justify"> Аԥочҭа адрес: 384900; Аԥсны Аҳәынҭқарра, ақ. Аҟәа,   Лакоба имҩа,   111 аҩны.<br>
+  Аҭел.: </p><ul><li>+7(840) 226-64-15
+  </li><li>+7(840) 226-24-41</li>
+  <li>+7(940) 925-81-80</li>
+  <li>+7(940) 774-25-62</li></ul>
+  E-mail.: <ul><li>nbraabch@sukhum.city</li></ul>
+  Акорреспонденциазы: 354000; Урыстәылатәи Афедерациа, Краснодартәи атәылаҿацә, ақ. Шәача,  Воровски имҩа, 1 аҩны, аԥочҭа хада, а/а 964<br>
+  Амилаҭтә библиотека адиректор - Борис Шьаликәа-иԥа Ҷолариа<p></p>
   </div>`;
 
   html_tr = `<div>
