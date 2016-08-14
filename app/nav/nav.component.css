@@ -10,6 +10,11 @@ nav {
 .navbar{
   margin-bottom: 0;
 }
+
+.navbar-nav > li > a{
+  display: inline-block;
+}
+
 @media (min-width: 768px) {
   .navbar-main .navbar-collapse {
     padding-left: 0;
