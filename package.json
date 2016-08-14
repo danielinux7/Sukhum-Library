@@ -1,5 +1,5 @@
 {
-  "name": "angular2-quickstart",
+  "name": "sukhum-library",
   "version": "0.2.0",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
@@ -8,6 +8,10 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings"
+  },
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/danielinux7/sukhum-library.git"
   },
   "license": "ISC",
   "dependencies": {
@@ -24,7 +28,7 @@
     "angular2-in-memory-web-api": "0.0.12",
     "bootstrap": "^3.3.6",
     "core-js": "^2.4.0",
-    "ng2-translate": "^2.2.2",
+    "ng2-translate": "2.2.2",
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.0.0-beta.6",
     "systemjs": "0.19.27",
