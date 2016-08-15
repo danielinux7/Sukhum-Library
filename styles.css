@@ -151,3 +151,7 @@ lib-footer li.rtl-text-align{
 .panel-title {
   text-align: center;
 }
+
+.home-header{
+  width:200px;
+}
