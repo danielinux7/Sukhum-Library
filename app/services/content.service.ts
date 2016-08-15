@@ -14,7 +14,7 @@ export class ContentService {
   }
   private extractData(res: Response) {
     let body = res.json();
-    return body || { };
+    return body || "";
   }
   private handleError (error: any) {
     // In a real world app, we might use a remote logging infrastructure
