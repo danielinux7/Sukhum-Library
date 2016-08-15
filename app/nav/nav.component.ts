@@ -12,7 +12,7 @@ declare  var $:any;
 })
 export class NavComponent {
    onSelect(event) {
-     $('.active')[0] !== undefined && $('.active')[0].removeAttribute('class','active');
+     $('.active')[0] !== undefined && $('.active').removeClass('active');
      $(event.target).closest('li').addClass('active');
    }
  }
