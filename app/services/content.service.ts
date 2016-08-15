@@ -14,7 +14,7 @@ export class ContentService {
   }
   private extractData(res: Response) {
     let body = res.json();
-    return body || "";
+    return body || "<div class='alert alert-warning' role='alert'>This page is currently not available in this language. Help us translate this page</div>";
   }
   private handleError (error: any) {
     // In a real world app, we might use a remote logging infrastructure
