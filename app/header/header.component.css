@@ -52,3 +52,8 @@ header h1 {
     background-image: url('/images/gerb-sm.png');
   }
 }
+@media (max-width: 768px) {
+  header{
+    height: auto;
+  }
+}

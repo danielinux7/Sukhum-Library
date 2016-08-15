@@ -1,8 +1,9 @@
 <div id="calendar-container">
   <div id='calendar'></div>
-  <div id="event-detail">
+  <div id="event-detail" class="alert alert-info alert-dismissible hide-sm" role="alert">
+    <button type="button" class="close hide-bg" (click)="onSelect($event)" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <div class="event-detail-section">
-      <h3>{{'eventTitleHeader' | translate}}</h3>
+      <h4>{{'eventTitleHeader' | translate}}</h4>
       {{currentEvent.summary}}
     </div>
     <div class="event-detail-section">

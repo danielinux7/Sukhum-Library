@@ -23,6 +23,7 @@ export class CalendarComponent implements OnInit{
         },
         eventClick: (calEvent, jsEvent, view) => {
           this.getEvent(calEvent.id.split('_')[0]);
+          $('.alert-info').removeClass('hide-sm');
           return false;
         }
     });
@@ -41,6 +42,7 @@ export class CalendarComponent implements OnInit{
           },
           eventClick: (calEvent, jsEvent, view) => {
             this.getEvent(calEvent.id.split('_')[0]);
+            $('.alert-info').removeClass('hide-sm');
             return false;
           }
       });
@@ -53,6 +55,10 @@ export class CalendarComponent implements OnInit{
                      .subscribe(
                        currentEvent => this.currentEvent = currentEvent ,
                        error =>  this.errorMessage = <any>error);
+  }
+
+  onSelect(event) {
+    $(event.target).closest('.alert-info').addClass('hide-sm');
   }
 
 }
