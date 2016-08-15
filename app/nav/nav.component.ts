@@ -14,5 +14,6 @@ export class NavComponent {
    onSelect(event) {
      $('.active')[0] !== undefined && $('.active').removeClass('active');
      $(event.target).closest('li').addClass('active');
+     $('.navbar-collapse').collapse('hide');
    }
  }
