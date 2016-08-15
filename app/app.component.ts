@@ -40,6 +40,9 @@ export class AppComponent implements OnInit{
 
     setRTL(){
       $('lib-content') !== undefined && $('lib-content').addClass('rtl-dir');
+      $('lib-nav') !== undefined && $('lib-nav li').addClass('rtl-text-align');
+      $('lib-footer') !== undefined && $('lib-footer li').addClass('rtl-text-align');
+      $('lib-footer') !== undefined && $('lib-footer h4').addClass('rtl-text-align');
       $('.app-rtl') !== undefined && $('.app-rtl').addClass('rtl-rotate');
       $('.app-rtl .search') !== undefined && $('.app-rtl .search').addClass('rtl-dir');
     }

@@ -45,6 +45,14 @@ body.lib-body{
   direction: rtl;
 }
 
+lib-footer li.rtl-text-align{
+  text-align: right;
+}
+
+.rtl-text-align{
+  text-align: right;
+}
+
 .rtl-rotate{
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
