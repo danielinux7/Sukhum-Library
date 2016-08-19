@@ -22,17 +22,19 @@ export function createComponentFactory(resolver: ComponentResolver, metadata: Co
     selector: 'dynamic-html-outlet',
 })
 export class DynamicHTMLOutlet {
-  @Input() src: string;
+  @Input() htmlPath: string;
+  @Input() cssPath: string;
 
   constructor(private vcRef: ViewContainerRef, private resolver: ComponentResolver) {
   }
 
   ngOnChanges() {
-    if (!this.src) return;
+    if (!this.htmlPath) return;
     $('dynamic-html') && $('dynamic-html').remove();
     const metadata = new ComponentMetadata({
         selector: 'dynamic-html',
-        templateUrl: this.src +'.html',
+        templateUrl: this.htmlPath +'.html',
+        styleUrls:  [this.cssPath],
         pipes: [TranslatePipe]
     });
     createComponentFactory(this.resolver, metadata)
