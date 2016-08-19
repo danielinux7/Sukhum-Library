@@ -8,7 +8,8 @@ import {
   ReflectiveInjector,
   ViewContainerRef,
 
-} from '@angular/core'
+} from '@angular/core';
+import { TranslatePipe } from 'ng2-translate/ng2-translate';
 declare var $:any;
 
 export function createComponentFactory(resolver: ComponentResolver, metadata: ComponentMetadata): Promise<ComponentFactory<any>> {
@@ -31,7 +32,8 @@ export class DynamicHTMLOutlet {
     $('dynamic-html') && $('dynamic-html').remove();
     const metadata = new ComponentMetadata({
         selector: 'dynamic-html',
-        template: this.src,
+        templateUrl: this.src +'.html',
+        pipes: [TranslatePipe]
     });
     createComponentFactory(this.resolver, metadata)
       .then(factory => {

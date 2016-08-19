@@ -31,5 +31,6 @@
 "event": "الحدث",
 "eventLocation": "موقع الحدث",
 "eventTime": "وقت الحدث",
-"eventDescription": "وصف الحدث"
+"eventDescription": "وصف الحدث",
+"notAvailablePage": "هذه الصفحة غير متاحة حاليا في هذه اللغة. ساعدونا في ترجمة هذه الصفحة"
 }

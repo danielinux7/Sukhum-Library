@@ -31,5 +31,6 @@
 "event": "Olay",
 "eventLocation": "Olay Konum",
 "eventTime": "Olay Zaman",
-"eventDescription": "Olay Açıklama"
+"eventDescription": "Olay Açıklama",
+"notAvailablePage": "Bu sayfa şu anda bu dilde mevcut değildir. Bize bu sayfayı çevrilmesine yardımcı"
 }
