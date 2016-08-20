@@ -1,9 +1,9 @@
 header {
   height:45%;
+  min-height: 105px;
   position:relative;
-  padding: 0 1em 1em 1em;
   border-bottom: 1px solid #FEB35D;
-  background-image: url('/images/mountain.jpg');
+  /*background-image: url('/images/mountain.jpg');*/
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
@@ -28,11 +28,14 @@ header h1 {
 }
 
 .abkhaz-gerb {
-  float:left;
+  position:absolute;
+  top: 0;
+  left: 1em;
   width: 120px;
   height: 150px;
   background-image: url('/images/gerb.png');
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 @media (max-width: 616px) {
@@ -52,8 +55,8 @@ header h1 {
     background-image: url('/images/gerb-sm.png');
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 617px){
   header{
-    height: auto;
+    height: 20%;
   }
 }
