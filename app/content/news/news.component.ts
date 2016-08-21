@@ -40,4 +40,6 @@ export class NewsComponent implements OnInit {
  export class News {
   message: string;
   picture: string;
+  name: string;
+  type: string;
 }

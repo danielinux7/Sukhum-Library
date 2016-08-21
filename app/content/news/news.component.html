@@ -1,7 +1,14 @@
-<div class="">
-  <img src="{{news[0].picture}}" alt="" />
-  <p>
-    {{news[0].message}}
-  </p>
+<div class="news-container">
+  <div *ngFor="#post of news">
+    <div class="panel panel-{{post.type}}">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{post.name || 'News'}}</h3>
+      </div>
+      <div class="panel-body">
+        <img src="{{post.picture}}" alt="" />
+        {{post.message}}
+      </div>
+    </div>
+  </div>
 </div>
 <!-- <dynamic-html-outlet [htmlPath]="html"></dynamic-html-outlet> -->
