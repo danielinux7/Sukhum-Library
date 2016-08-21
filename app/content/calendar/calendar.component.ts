@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService, TranslatePipe, LangChangeEvent } from 'ng2-translate/ng2-translate';
-import { EventService } from './../../services/event.service'
+import { EventService } from './../../services/event.service';
 declare var $:any;
 
 @Component({

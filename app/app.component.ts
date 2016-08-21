@@ -6,7 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
-import { EventService } from './services/event.service'
+import { EventService } from './services/event.service';
+import { NewsService } from './services/news.service';
 declare var $:any;
 @Component({
   selector: 'lib-app',
@@ -14,7 +15,7 @@ declare var $:any;
   styleUrls:  ['./app/app.component.css'],
   pipes: [TranslatePipe],
   directives:[HeaderComponent, NavComponent, ContentComponent, FooterComponent],
-  providers: [TranslateService, EventService]
+  providers: [TranslateService, EventService, NewsService]
 })
 export class AppComponent implements OnInit{
   userLang = 'en';
