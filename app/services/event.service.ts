@@ -5,15 +5,15 @@ import { Observable }     from 'rxjs/Observable';
 @Injectable()
 export class EventService {
   constructor (private http: Http) {}
-  private eventsUrl = 'https://www.googleapis.com/calendar/v3/calendars/popf6dff8ve62nrc18aunt4nsc@group.calendar.google.com/events';  // URL to web API
+  private eventsUrl = 'https://www.googleapis.com/calendar/v3/calendars/';  // URL to web API
   private apiKey = '?key=AIzaSyCFf8H7WgYP6W3NPI8z0xRw9N0VAel4Ha4';
   getEvents (): Observable<any> {
     return this.http.get(this.eventsUrl+this.apiKey)
                     .map(this.extractData)
                     .catch(this.handleError);
   }
-  getEvent (id: string): Observable<any> {
-    return this.http.get(this.eventsUrl+'/'+id+this.apiKey)
+  getEvent (id: string, gID:string): Observable<any> {
+    return this.http.get(this.eventsUrl+gID+'/events/'+id+this.apiKey)
                     .map(this.extractData)
                     .catch(this.handleError);
   }
