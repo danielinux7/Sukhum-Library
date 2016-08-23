@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DynamicHTMLOutlet } from './../../directives/dynamic-html-outlet/dynamicHtmlOutlet.directive';
 import { TranslateService, TranslatePipe, LangChangeEvent } from 'ng2-translate/ng2-translate';
+import { SafeResourceUrl, DomSanitizationService } from '@angular/platform-browser';
 import { NewsService } from './../../services/news.service';
 
 @Component({
@@ -16,8 +17,7 @@ export class NewsComponent implements OnInit {
   news = [News];
   paging = {'previous':'', 'next':''};
   html_template = `./app/content/news/news_`;
-
-  constructor(private translate: TranslateService,  private newsService: NewsService) {}
+  constructor(private translate: TranslateService,  private newsService: NewsService, private sanitize:DomSanitizationService ) {}
 
   ngOnInit (){
     this.getNews(this.translate.currentLang);
@@ -32,7 +32,18 @@ export class NewsComponent implements OnInit {
   getNews(lang: string) {
      this.newsService.getNews(lang)
                      .subscribe(
-                       (news:any) => { this.news = news.data; this.paging = news.paging },
+                       (news:any) => {
+                                      //  Otherwise we get unsafe url source on iframe, need to refactor
+                                       for (let i = 0; i < news.data.length; i++) {
+                                         if (news.data[i].link && news.data[i].link.match('youtube')) {
+                                           news.data[i].url = this.sanitize.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/'+ news.data[i].link.split('v=')[1]+'?hl=en&amp;autoplay=0&amp;cc_load_policy=0&amp;loop=0&amp;iv_load_policy=1&amp;fs=1&amp;showinfo=1');
+                                         }
+                                         else if (news.data[i].link){
+                                           news.data[i].url = this.sanitize.bypassSecurityTrustResourceUrl(news.data[i].link);
+                                         }
+                                       }
+                                       this.news = news.data;
+                                       this.paging = news.paging },
                        error =>  this.errorMessage = <any>error);
   }
 
@@ -45,4 +56,5 @@ export class NewsComponent implements OnInit {
   name: string;
   type: string;
   link: string;
+  url: SafeResourceUrl;
 }

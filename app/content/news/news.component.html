@@ -8,7 +8,7 @@
         <img *ngIf="post.type !== 'video'" src="{{post.picture}}" alt="" />
         <div *ngIf="post.type === 'video'" class="video-container">
           <div id="youtube_canvas">
-            <iframe frameborder="0" src="https://www.youtube.com/embed/0P1qAffR3dA?hl=en&amp;autoplay=0&amp;cc_load_policy=0&amp;loop=0&amp;iv_load_policy=1&amp;fs=1&amp;showinfo=1"></iframe>
+            <iframe frameborder="0" [src]="post.url"></iframe>
           </div>
         </div>
         {{post.message}}
