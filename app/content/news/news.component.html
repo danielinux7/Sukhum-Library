@@ -1,5 +1,5 @@
 <div class="news-container">
-  <div *ngFor="#post of news">
+  <div *ngFor="let post of news">
     <div class="panel panel-{{post.type}}">
       <div class="panel-heading">
         <h3 class="panel-title">{{post.name || post.type}}</h3>

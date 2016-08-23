@@ -20,16 +20,17 @@ export class NewsComponent implements OnInit {
   constructor(private translate: TranslateService,  private newsService: NewsService) {}
 
   ngOnInit (){
-    this.getNews();
+    this.getNews(this.translate.currentLang);
     this.html = this.html_template + this.translate.currentLang;
 
     this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
       this.html = this.html_template + this.translate.currentLang;
+      this.getNews(this.translate.currentLang);
     });
   }
 
-  getNews() {
-     this.newsService.getNews()
+  getNews(lang: string) {
+     this.newsService.getNews(lang)
                      .subscribe(
                        (news:any) => { this.news = news.data; this.paging = news.paging },
                        error =>  this.errorMessage = <any>error);

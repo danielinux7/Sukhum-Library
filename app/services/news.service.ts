@@ -5,9 +5,9 @@ import { Observable }     from 'rxjs/Observable';
 @Injectable()
 export class NewsService {
   constructor (private http: Http) {}
-  private newsUrl = ' https://graph.facebook.com/v2.7/631241557059261/posts?fields=id%2Cpicture%2Cname%2Ctype%2Cmessage&access_token=523973824459664%257Cd9u7qSG0aH0WOsCSujx4FFbOllQ';  // URL to web API
-  getNews (): Observable<any> {
-    return this.http.get(this.newsUrl)
+  private newsUrl = ' https://graph.facebook.com/v2.7/631241557059261/posts?fields=id%2Cpicture%2Cname%2Ctype%2Cmessage%2Clink%2Cfull_picture&access_token=EAAHcjSmts5ABAFh1FBMh1VaKY7HWg5HqrSMqda11kkXK10avaxZBHmX6z9F6ctcMNz2TimQZB70zZBWiyqHsZABdwhaCpPaEZCIOZBbBTeEm33u6bZBGZCpXzu41MsDbz20ta4JpLSgusGmLSnojGLW4kh6xGdZAHZCksZD&locale=';  // URL to web API
+  getNews (lang: string): Observable<any> {
+    return this.http.get(this.newsUrl + lang)
                     .map(this.extractData)
                     .catch(this.handleError);
   }
