@@ -2,10 +2,15 @@
   <div *ngFor="#post of news">
     <div class="panel panel-{{post.type}}">
       <div class="panel-heading">
-        <h3 class="panel-title">{{post.name || 'News'}}</h3>
+        <h3 class="panel-title">{{post.name || post.type}}</h3>
       </div>
       <div class="panel-body">
-        <img src="{{post.picture}}" alt="" />
+        <img *ngIf="post.type !== 'video'" src="{{post.picture}}" alt="" />
+        <div *ngIf="post.type === 'video'" class="video-container">
+          <div id="youtube_canvas">
+            <iframe frameborder="0" src="https://www.youtube.com/embed/0P1qAffR3dA?hl=en&amp;autoplay=0&amp;cc_load_policy=0&amp;loop=0&amp;iv_load_policy=1&amp;fs=1&amp;showinfo=1"></iframe>
+          </div>
+        </div>
         {{post.message}}
       </div>
     </div>

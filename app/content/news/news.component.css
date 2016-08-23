@@ -38,6 +38,14 @@
     background-color: #f2dede;
     border-color: #ebccd1;
   }
+  .panel-video {
+    border-color: #a6d8fd;
+  }
+  .panel-video > .panel-heading {
+    color: #167ac6;
+    background-color: #c4e5ff;
+    border-color: #a6d8fd;
+  }
   .panel-photo {
     border-color: #d6e9c6;
   }
@@ -45,6 +53,28 @@
     color: #3c763d;
     background-color: #dff0d8;
     border-color: #d6e9c6;
+  }
+  .video-container{
+    overflow:hidden;
+    height:270px;
+    width:480px;
+    max-width:100%;
+    max-height:100%;
+  }
+  #youtube_canvas {
+    height:100%;
+    width:100%;
+    max-width:100%
+  }
+  #youtube_canvas img {
+    max-width:none!important;
+    background:none!important
+  }
+  #youtube_canvas iframe {
+    height:100%;
+    width:100%;
+    max-width:100%;
+    border:0;
   }
   @media (max-width: 616px) {
     .panel{
