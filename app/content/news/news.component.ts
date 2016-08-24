@@ -38,8 +38,8 @@ export class NewsComponent implements OnInit {
                                          if (news.data[i].link && news.data[i].link.match('youtube')) {
                                            news.data[i].url = this.sanitize.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/'+ news.data[i].link.split('v=')[1]+'?hl=en&amp;autoplay=0&amp;cc_load_policy=0&amp;loop=0&amp;iv_load_policy=1&amp;fs=1&amp;showinfo=1');
                                          }
-                                         else if (news.data[i].link){
-                                           news.data[i].url = this.sanitize.bypassSecurityTrustResourceUrl(news.data[i].link);
+                                         else if (news.data[i].link && news.data[i].link.match('facebook')){
+                                           news.data[i].url = this.sanitize.bypassSecurityTrustResourceUrl('https://www.facebook.com/plugins/video.php?href='+news.data[i].link);
                                          }
                                        }
                                        this.news = news.data;
