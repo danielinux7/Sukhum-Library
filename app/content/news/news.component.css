@@ -17,6 +17,20 @@
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
 }
+.panel-footer{
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  -o-flex-direction: row;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
 .panel{
   margin: 0.5em;
   width: 210px;
@@ -51,6 +65,7 @@
 }
 .glyphicon-thumbs-up{
   color: #337ab7;
+  line-height: inherit;
 }
 .panel-media {
   display: block;
@@ -144,5 +159,7 @@
     .panel-footer{
       position: relative;
       padding-top: 0;
+      justify-content: flex-end;
+      -webkit-justify-content: flex-end;
     }
 }
