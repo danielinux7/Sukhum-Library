@@ -20,12 +20,12 @@ export class NewsComponent implements OnInit {
   constructor(private translate: TranslateService,  private newsService: NewsService, private sanitize:DomSanitizationService ) {}
 
   ngOnInit (){
-    this.getNews(this.translate.currentLang);
+    this.getNews((this.translate.currentLang === 'ab'?'es':this.translate.currentLang));
     this.html = this.html_template + this.translate.currentLang;
 
     this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
       this.html = this.html_template + this.translate.currentLang;
-      this.getNews(this.translate.currentLang);
+      this.getNews((this.translate.currentLang === 'ab'?'es':this.translate.currentLang));
     });
   }
 
