@@ -56,5 +56,6 @@ export class NewsComponent implements OnInit {
   name: string;
   type: string;
   link: string;
+  created_time: string;
   url: SafeResourceUrl;
 }
