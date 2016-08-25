@@ -21,6 +21,7 @@
   margin: 0.5em;
   width: 210px;
   height: 300px;
+  overflow-y: hidden;
 }
 .panel-info {
   font-size: 14px;
