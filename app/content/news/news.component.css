@@ -21,6 +21,7 @@
   margin: 0.5em;
   width: 210px;
   height: 300px;
+  position:relative;
   overflow-y: hidden;
 }
 .panel-info {
@@ -29,6 +30,27 @@
 }
 .panel-body {
   padding-top: 0;
+}
+.panel-footer{
+  position: absolute;
+  bottom:0;
+  padding-top: 3.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.3em;
+  width: 100%;
+  border: none;
+  background: rgba(255,255,255,0.23);
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.23) 0%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.23)), color-stop(66%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.23) 0%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,0.23) 0%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,0.23) 0%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.23) 0%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+.glyphicon-thumbs-up{
+  color: #337ab7;
 }
 .panel-media {
   display: block;
@@ -118,5 +140,9 @@
     }
     .panel-media{
       text-align: initial;
+    }
+    .panel-footer{
+      position: relative;
+      padding-top: 0;
     }
 }

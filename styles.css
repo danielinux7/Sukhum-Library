@@ -98,4 +98,7 @@ lib-footer li.rtl-text-align{
   .fc-toolbar .fc-left h2{
     font-size: 1.7em;
   }
+  .hidden-xxs{
+    display:none !important;
+  }
 }

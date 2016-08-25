@@ -32,5 +32,6 @@
     "eventLocation": "Event Location",
     "eventTime": "Event Time",
     "eventDescription": "Event Description",
-    "notAvailablePage": "This page is currently not available in this language. Help us translate this page"
+    "notAvailablePage": "This page is currently not available in this language. Help us translate this page",
+    "more": "More"
 }
