@@ -41,6 +41,10 @@ body.lib-body{
   background-position: center center;
 }
 
+.hide{
+    display: none !important;
+}
+
 .rtl-dir{
   direction: rtl;
 }

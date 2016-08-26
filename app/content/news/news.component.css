@@ -75,6 +75,12 @@
   background: linear-gradient(to bottom, rgba(255,255,255,0.23) 0%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
 }
+.panel-footer a:hover{
+  color: #333;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
 .glyphicon-thumbs-up{
   color: #337ab7;
   line-height: inherit;

@@ -30,19 +30,24 @@ export class NewsComponent implements OnInit {
     });
   }
 
+// Less/more functionality for panels
   togglePanel(event:any) {
     if (event.target.className.match('hidden-xxs')) {
       event.target.isDisabled = false;
       if (!event.target.isDisabled) {
-        if (!event.target.isOn) {
+        if (!event.target.isOn && event.target.className.match('.more')) {
           $(event.target).closest('.panel').addClass('open');
           $(event.target).closest('.panel-footer').addClass('no-bg');
+          $(event.target).addClass('hide');
+          $(event.target).next().removeClass('hide');
           event.target.isOn = true;
         }
-        else{
+        else {
           $(event.target).closest('.panel').removeClass('open');
           $(event.target).closest('.panel-footer').removeClass('no-bg');
-          event.target.isOn = false;
+          $(event.target).prev().removeClass('hide');
+          $(event.target).addClass('hide');
+          $(event.target).prev()[0].isOn = false;
         }
       }
     }
