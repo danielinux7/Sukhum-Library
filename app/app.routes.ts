@@ -3,13 +3,15 @@ import { HomeComponent } from './content/home/home.component';
 import { NewsComponent } from './content/news/news.component';
 import { ContactsComponent } from './content/contacts/contacts.component';
 import { CalendarComponent } from './content/calendar/calendar.component';
+import { SearchComponent } from './content/search/search.component';
 
 const routes: RouterConfig = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'news', component: NewsComponent },
   { path: 'contacts', component: ContactsComponent },
-  { path: 'calendar', component: CalendarComponent }
+  { path: 'calendar', component: CalendarComponent },
+  { path: 'search', component: SearchComponent }
 ];
 
 export const appRouterProviders = [
