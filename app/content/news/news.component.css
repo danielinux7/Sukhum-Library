@@ -31,10 +31,22 @@
   justify-content: space-between;
   -webkit-justify-content: space-between;
 }
+.panel-space{
+  height: 15px;
+}
+.open{
+  height: auto !important;
+  width: auto !important;
+}
+.no-bg{
+  background: none !important;
+  padding-top: 0 !important;
+}
 .panel{
   margin: 0.5em;
   width: 210px;
   height: 300px;
+  min-height: 300px;
   position:relative;
   overflow-y: hidden;
 }
@@ -132,6 +144,7 @@
       margin-bottom: 0.5em;
       width: 100%;
       height: auto;
+      min-height: inherit;
     }
     .news-container{
       flex-direction: column;
@@ -149,6 +162,7 @@
     }
     .panel-body {
       padding-top: 15px;
+      padding-bottom: 0;
     }
     .panel-info {
       padding-top: 0;
@@ -161,5 +175,8 @@
       padding-top: 0;
       justify-content: flex-end;
       -webkit-justify-content: flex-end;
+    }
+    .panel-space{
+      height: 0;
     }
 }

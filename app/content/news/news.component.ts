@@ -3,6 +3,7 @@ import { DynamicHTMLOutlet } from './../../directives/dynamic-html-outlet/dynami
 import { TranslateService, TranslatePipe, LangChangeEvent } from 'ng2-translate/ng2-translate';
 import { SafeResourceUrl, DomSanitizationService } from '@angular/platform-browser';
 import { NewsService } from './../../services/news.service';
+declare var $:any;
 
 @Component({
   selector: 'lib-news',
@@ -27,6 +28,24 @@ export class NewsComponent implements OnInit {
       this.html = this.html_template + this.translate.currentLang;
       this.getNews((this.translate.currentLang === 'ab'?'es':this.translate.currentLang));
     });
+  }
+
+  togglePanel(event:any) {
+    if (event.target.className.match('hidden-xxs')) {
+      event.target.isDisabled = false;
+      if (!event.target.isDisabled) {
+        if (!event.target.isOn) {
+          $(event.target).closest('.panel').addClass('open');
+          $(event.target).closest('.panel-footer').addClass('no-bg');
+          event.target.isOn = true;
+        }
+        else{
+          $(event.target).closest('.panel').removeClass('open');
+          $(event.target).closest('.panel-footer').removeClass('no-bg');
+          event.target.isOn = false;
+        }
+      }
+    }
   }
 
   getNews(lang: string) {

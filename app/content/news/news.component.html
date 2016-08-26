@@ -1,4 +1,4 @@
-<div class="news-container">
+<div class="news-container" (click)="togglePanel($event)">
   <div *ngFor="let post of news">
     <div class="panel panel-{{post.type}}">
       <div class="panel-heading">
@@ -19,8 +19,9 @@
             {{post.message || post.name}}
         </div>
       </div>
+      <div class="panel-space"></div>
       <div class="panel-footer">
-        <a class="hidden-xxs" href="#">{{'more' | translate}}</a>
+        <a class="hidden-xxs">{{'more' | translate}}</a>
         <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
       </div>
     </div>
