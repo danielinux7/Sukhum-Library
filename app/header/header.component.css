@@ -46,6 +46,10 @@ header h1 {
   padding-left: 0.5em;
 }
 
+.header-title div {
+  display: inline-block;
+}
+
 .header-login{
   text-align: right;
   padding-right: 0;
@@ -55,11 +59,8 @@ header h1 {
   color: #fff;
   background-color: #3b8284;
   text-decoration: none;
-}
-
-.v4-tease, .v4-tease:hover {
-    /*-webkit-transition-duration: 1s; /* Safari */*/
-    /*transition-duration: 1s;*/
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
 }
 
 .abkhaz-gerb {
