@@ -40,6 +40,17 @@ header h1 {
     text-decoration: none;
 }
 
+.header-title{
+  text-align: left;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+
+.header-login{
+  text-align: right;
+  padding-right: 0;
+}
+
 .v4-tease:hover, .v4-tease:focus {
   color: #fff;
   background-color: #3b8284;

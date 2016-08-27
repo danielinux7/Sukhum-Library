@@ -1,14 +1,11 @@
 <header>
-<div class="v4-tease">
-  <div class="">
-
-  </div>
-  <div class="header-title rtl-app">
+<div class="v4-tease row">
+  <div class="header-title col-xs-8 rtl-app">
     {{'title' | translate}}
   </div>
-  <div class="header-login rtl-app">
-    <button class="btn btn-primary btn-margin" (click)="auth.login()" *ngIf="!auth.authenticated()">Log In</button>
-    <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
+  <div class="header-login col-xs-4 rtl-app">
+    <button class="btn btn-primary btn-margin" (click)="auth.login()" *ngIf="!auth.authenticated()">{{'login' | translate}}</button>
+    <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()">{{'logout' | translate}}</button>
   </div>
 </div>
 <a [routerLink]="['/home']"><span class="abkhaz-gerb app-rtl"></span></a>

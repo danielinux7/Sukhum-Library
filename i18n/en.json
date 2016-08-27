@@ -34,5 +34,7 @@
     "eventDescription": "Event Description",
     "notAvailablePage": "This page is currently not available in this language. Help us translate this page",
     "more": "More",
-    "less": "Less"
+    "less": "Less",
+    "login": "Log In",
+    "logout": "Log Out"
 }

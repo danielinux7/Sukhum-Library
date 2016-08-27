@@ -34,5 +34,7 @@
 "eventDescription": "Olay Açıklama",
 "notAvailablePage": "Bu sayfa şu anda bu dilde mevcut değildir. Bize bu sayfayı çevrilmesine yardımcı",
 "more": "Daha",
-"less": "Az"
+"less": "Az",
+"login": "Oturum aç",
+"logout": "Çıkış Yap"
 }
