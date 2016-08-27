@@ -9,9 +9,9 @@
     "tsc:w": "tsc -w",
     "typings": "typings"
   },
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/danielinux7/sukhum-library.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielinux7/sukhum-library.git"
   },
   "license": "ISC",
   "dependencies": {
@@ -26,6 +26,7 @@
     "@angular/router-deprecated": "2.0.0-rc.2",
     "@angular/upgrade": "2.0.0-rc.3",
     "angular2-in-memory-web-api": "0.0.12",
+    "angular2-jwt": "^0.1.19",
     "bootstrap": "^3.3.6",
     "core-js": "^2.4.0",
     "ng2-translate": "2.2.2",

@@ -27,6 +27,30 @@ header h1 {
   color: #555;
 }
 
+.v4-tease {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
+    margin-left: -1em;
+    margin-right: -1em;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background-color: #3c763d;
+    text-decoration: none;
+}
+
+.v4-tease:hover, .v4-tease:focus {
+  color: #fff;
+  background-color: #3b8284;
+  text-decoration: none;
+}
+
+.v4-tease, .v4-tease:hover {
+    /*-webkit-transition-duration: 1s; /* Safari */*/
+    /*transition-duration: 1s;*/
+}
+
 .abkhaz-gerb {
   float:left;
   width: 120px;

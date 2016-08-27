@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { TranslatePipe } from 'ng2-translate/ng2-translate';
 import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Auth } from './../services/auth.service';
+
 @Component({
   selector: 'lib-header',
   templateUrl: './app/header/header.component.html',
@@ -9,5 +11,5 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   directives: [ROUTER_DIRECTIVES]
 })
 export class HeaderComponent {
-  
+  constructor(private auth: Auth) {}
  }

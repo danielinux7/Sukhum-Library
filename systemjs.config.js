@@ -7,6 +7,7 @@
   var map = {
     'app':                        'app', // 'dist',
     '@angular':                   'node_modules/@angular',
+    'angular2-jwt':               'node_modules/angular2-jwt/angular2-jwt.js',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
     'ng2-translate':              'node_modules/ng2-translate',
     'rxjs':                       'node_modules/rxjs',
@@ -15,6 +16,7 @@
   var packages = {
     'app':                        { main: 'main.js',  defaultExtension: 'js' },
     'ng2-translate':              { defaultExtension: 'js' },
+    'angular2-jwt':               { defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
   };
