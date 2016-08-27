@@ -8,7 +8,14 @@ declare var Auth0Lock: any;
 @Injectable()
 export class Auth {
   // Configure Auth0
-  lock = new Auth0Lock('3McB2tL0NZKY0IaAdqE6YkfzRbiQrDbk', 'daniel-abzakh.eu.auth0.com', {});
+  lock = new Auth0Lock('3McB2tL0NZKY0IaAdqE6YkfzRbiQrDbk', 'daniel-abzakh.eu.auth0.com', {
+    theme: {
+    logo: "./images/gerb-sm.png",
+    },
+    languageDictionary: {
+      title: "НБРА"
+    }
+  });
 
   constructor() {
     // Add callback for lock `authenticated` event
