@@ -5,10 +5,11 @@ import { NewsComponent } from './news/news.component';
 import { SearchComponent } from './search/search.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { ProfileComponent } from './user/profile/profile.component';
 @Component({
   selector: 'lib-content',
   templateUrl: './app/content/content.component.html',
   styleUrls:  ['./app/content/content.component.css'],
-  directives:[ROUTER_DIRECTIVES, HomeComponent, NewsComponent, ContactsComponent, CalendarComponent, SearchComponent]
+  directives:[ROUTER_DIRECTIVES, HomeComponent, NewsComponent, ContactsComponent, CalendarComponent, SearchComponent, ProfileComponent]
 })
 export class ContentComponent { }
