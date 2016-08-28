@@ -7,6 +7,7 @@ declare var Auth0Lock: any;
 
 @Injectable()
 export class Auth {
+  userProfile: Object;
   // Configure Auth0
   lock = new Auth0Lock('3McB2tL0NZKY0IaAdqE6YkfzRbiQrDbk', 'daniel-abzakh.eu.auth0.com', {
     theme: {
@@ -18,9 +19,23 @@ export class Auth {
   });
 
   constructor() {
-    // Add callback for lock `authenticated` event
+    this.userProfile = JSON.parse(localStorage.getItem('profile'));
+
+    // Add callback for the Lock `authenticated` event
     this.lock.on("authenticated", (authResult) => {
       localStorage.setItem('id_token', authResult.idToken);
+
+      // Fetch profile information
+      this.lock.getProfile(authResult.idToken, (error, profile) => {
+        if (error) {
+          // Handle error
+          alert(error);
+          return;
+        }
+
+        localStorage.setItem('profile', JSON.stringify(profile));
+        this.userProfile = profile;
+      });
     });
   }
 
@@ -38,5 +53,7 @@ export class Auth {
   public logout() {
     // Remove token from localStorage
     localStorage.removeItem('id_token');
+    localStorage.removeItem('profile');
+    this.userProfile = undefined;
   };
 }
