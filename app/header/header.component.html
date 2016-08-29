@@ -1,7 +1,12 @@
 <header>
 <div class="v4-tease row">
   <div class="header-title col-xs-8">
-    <div class="app-rtl" *ngIf="auth.authenticated()"><a class="btn btn-primary btn-margin" [routerLink]="['/profile']">{{'profile' | translate}}</a></div>
+    <div *ngIf="auth.authenticated()">
+      <ul class="nav nav-pills">
+        <li role="presentation"><img [src]="auth.userProfile && auth.userProfile.picture" alt="" class="img-circle"></li>
+        <li role="presentation"><a class="app-rtl" [routerLink]="['/profile']">{{'profile' | translate}}</a></li>
+      </ul>
+    </div>
   </div>
   <div class="header-login col-xs-4">
     <button class="btn btn-primary btn-margin app-rtl" (click)="auth.login()" *ngIf="!auth.authenticated()">{{'login' | translate}}</button>

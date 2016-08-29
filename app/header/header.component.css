@@ -42,12 +42,30 @@ header h1 {
 
 .header-title{
   text-align: left;
-  padding-top: 0.5em;
-  padding-left: 0.5em;
+  padding-left: 0;
 }
 
 .header-title div {
   display: inline-block;
+}
+
+.nav-pills > li > a {
+  padding: 6px 12px;
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: normal;
+}
+
+.nav-pills > li + li {
+    margin-left: 5px;
+}
+
+.nav-pills > li > a:hover, .nav-pills > li > a:focus {
+  background-color: #39613a;
+}
+
+.nav-pills > li > img {
+  width: 35px;
 }
 
 .header-login{
