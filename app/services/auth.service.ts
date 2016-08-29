@@ -15,6 +15,11 @@ export class Auth {
     },
     languageDictionary: {
       title: "НБРА"
+    },
+    rememberLastLogin: false,
+    socialButtonStyle: 'small',
+    auth: {
+      redirect: false
     }
   });
 
