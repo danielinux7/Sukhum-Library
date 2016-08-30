@@ -33,9 +33,9 @@
       </div> -->
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
-          <input type="text" class="form-control app-rtl search" placeholder="{{'search' | translate}}">
+          <input type="text" class="form-control app-rtl search" [(ngModel)]='keyword' placeholder="{{'search' | translate}}">
         </div>
-        <a type="submit" [routerLink]="['/search']" class="btn btn-default app-rtl">{{'search' | translate}}</a>
+        <a type="submit" [routerLink]="['/search', {query:keyword}]" class="btn btn-default app-rtl">{{'search' | translate}}</a>
       </form>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
