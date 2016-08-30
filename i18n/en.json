@@ -37,5 +37,6 @@
     "less": "Less",
     "login": "Log In",
     "logout": "Log Out",
-    "profile": "Profile"
+    "profile": "Profile",
+    "noOfResults": "No Of Results"
 }

@@ -1,15 +1,14 @@
-<div class="">
-No Of Results: {{noOfResults}}
-</div>
-
 <div class="search-container">
+  <h4>{{'noOfResults' | translate}}: {{noOfResults}}</h4>
   <div *ngFor="let result of searchResult" class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">{{result.TITLE}}</h3>
     </div>
     <div class="panel-body">
       Year: {{result.YEAR}} Publisher: {{result.PUBLISHER}} Country: {{result.COUNTRY}} Language: {{result.LANGUAGE}}
-      <a href="{{result.URI}}">{{result.URI}}</a>
+      <div>
+        <a href="{{result.URI}}">Resource</a>
+      </div>
     </div>
   </div>
 </div>
