@@ -1,3 +1,15 @@
 <div class="">
-  Search results here ...
+No Of Results: {{noOfResults}}
+</div>
+
+<div class="search-container">
+  <div *ngFor="let result of searchResult" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{result.TITLE}}</h3>
+    </div>
+    <div class="panel-body">
+      Year: {{result.YEAR}} Publisher: {{result.PUBLISHER}} Country: {{result.COUNTRY}} Language: {{result.LANGUAGE}}
+      <a href="{{result.URI}}">{{result.URI}}</a>
+    </div>
+  </div>
 </div>

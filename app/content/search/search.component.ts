@@ -11,17 +11,20 @@ declare var $:any;
 })
 export class SearchComponent implements OnInit{
   errorMessage: string;
-  searchResult: {};
+  searchResult: any;
+  noOfResults: any;
   constructor(private translate: TranslateService, private searchService: SearchService ) {}
 
   ngOnInit (){
-
+    this.getSearch('daniel');
   }
 
   getSearch(keyword:string) {
      this.searchService.getSearch(keyword)
                      .subscribe(
-                       result => this.searchResult = result ,
+                       collection => { this.searchResult = collection.Results;
+                                       this.noOfResults = collection.NoOfResults
+                                     },
                        error =>  this.errorMessage = <any>error);
   }
 

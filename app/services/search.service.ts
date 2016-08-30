@@ -5,7 +5,7 @@ import { Observable }     from 'rxjs/Observable';
 @Injectable()
 export class SearchService {
   constructor (private http: Http) {}
-  private searchUrl = 'http://data.theeuropeanlibrary.org/opensearch/json?apikey=isuveu6roioo1b1ip6dub3ffml&query=';  // URL to web API
+  private searchUrl = 'http://localhost:3000/eusearch?query=';  // URL to web API
   getSearch (keyword: string): Observable<any> {
     return this.http.get(this.searchUrl + keyword)
                     .map(this.extractData)
