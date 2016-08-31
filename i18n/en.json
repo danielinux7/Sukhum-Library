@@ -38,5 +38,6 @@
     "login": "Log In",
     "logout": "Log Out",
     "profile": "Profile",
-    "noOfResults": "No Of Results"
+    "noOfResults": "No Of Results",
+    "newSearch": "Please, Have a new search."
 }

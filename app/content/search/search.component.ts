@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck } from '@angular/core';
 import { TranslateService, TranslatePipe, LangChangeEvent } from 'ng2-translate/ng2-translate';
 import { ActivatedRoute } from '@angular/router';
 import { SearchService } from './../../services/search.service';
@@ -12,15 +12,16 @@ declare var $:any;
   styleUrls:  ['./app/content/search/search.component.css'],
   pipes: [TranslatePipe]
 })
-export class SearchComponent implements OnInit{
+export class SearchComponent implements DoCheck{
   errorMessage: string;
   searchResult: any;
   noOfResults: any;
   constructor(private translate: TranslateService, private route: ActivatedRoute, private searchService: SearchService, private model: Search ) {}
 
-  ngOnInit (){
+  ngDoCheck() {
     if (this.model.type === 'basic') {
       this.getSearch(encodeURI(this.model.query));
+      this.model.type = 'none';
     }
   }
 
