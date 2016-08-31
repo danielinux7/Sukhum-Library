@@ -1,0 +1,6 @@
+<form (ngSubmit)="onSubmit(theForm)" class="navbar-form navbar-right" #theForm="ngForm" role="search">
+  <div class="form-group">
+    <input class="form-control app-rtl search" name="query" required [(ngModel)]="model.query" placeholder="{{'search' | translate}}">
+  </div>
+  <button type="submit" class="btn btn-default app-rtl" [disabled]="!theForm.form.valid">{{'search' | translate}}</button>
+</form>

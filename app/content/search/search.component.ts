@@ -17,8 +17,10 @@ export class SearchComponent implements OnInit{
   constructor(private translate: TranslateService, private route: ActivatedRoute, private searchService: SearchService ) {}
 
   ngOnInit (){
-    let query = this.route.snapshot.params['query'];
-    this.getSearch(encodeURI(query));
+    let search = this.route.snapshot.params;
+    if (search['type'] === 'basic') {
+      this.getSearch(encodeURI(search['query']));
+    }
   }
 
   getSearch(keyword:string) {

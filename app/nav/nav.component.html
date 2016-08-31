@@ -19,24 +19,7 @@
         <li><a class="app-rtl" href="#">{{'us' | translate}}</a></li>
         <li><a class="app-rtl" [routerLink]="['/contacts']">{{'contacts' | translate}}</a></li>
       </ul>
-      <!-- <div class="nav navbar-nav dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Вход <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Очертание</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Выход</a></li>
-        </ul>
-      </div> -->
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control app-rtl search" [(ngModel)]='keyword' placeholder="{{'search' | translate}}">
-        </div>
-        <a type="submit" [routerLink]="['/search', {query:keyword}]" class="btn btn-default app-rtl">{{'search' | translate}}</a>
-      </form>
+      <search-form></search-form>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

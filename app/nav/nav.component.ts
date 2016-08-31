@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslatePipe } from 'ng2-translate/ng2-translate';
 import { ROUTER_DIRECTIVES } from '@angular/router';
+import { SearchDirective } from './../directives/search-form/search.directive';
 declare  var $:any;
 
 @Component({
@@ -8,7 +9,7 @@ declare  var $:any;
   templateUrl: './app/nav/nav.component.html',
   styleUrls:  ['./app/nav/nav.component.css'],
   pipes: [TranslatePipe],
-  directives:[ROUTER_DIRECTIVES]
+  directives:[ROUTER_DIRECTIVES, SearchDirective]
 })
 export class NavComponent {
    onSelect(event) {
