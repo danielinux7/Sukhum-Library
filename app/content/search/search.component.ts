@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService, TranslatePipe, LangChangeEvent } from 'ng2-translate/ng2-translate';
 import { ActivatedRoute } from '@angular/router';
 import { SearchService } from './../../services/search.service';
+import { Search } from './../../models/search.model';
+
 declare var $:any;
 
 @Component({
@@ -14,12 +16,11 @@ export class SearchComponent implements OnInit{
   errorMessage: string;
   searchResult: any;
   noOfResults: any;
-  constructor(private translate: TranslateService, private route: ActivatedRoute, private searchService: SearchService ) {}
+  constructor(private translate: TranslateService, private route: ActivatedRoute, private searchService: SearchService, private model: Search ) {}
 
   ngOnInit (){
-    let search = this.route.snapshot.params;
-    if (search['type'] === 'basic') {
-      this.getSearch(encodeURI(search['query']));
+    if (this.model.type === 'basic') {
+      this.getSearch(encodeURI(this.model.query));
     }
   }
 

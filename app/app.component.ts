@@ -10,6 +10,8 @@ import { EventService } from './services/event.service';
 import { NewsService } from './services/news.service';
 import { SearchService } from './services/search.service';
 import { Auth } from './services/auth.service';
+import { Search } from './models/search.model';
+
 declare var $:any;
 @Component({
   selector: 'lib-app',
@@ -17,7 +19,7 @@ declare var $:any;
   styleUrls:  ['./app/app.component.css'],
   pipes: [TranslatePipe],
   directives:[HeaderComponent, NavComponent, ContentComponent, FooterComponent],
-  providers: [TranslateService, EventService, NewsService, SearchService, Auth]
+  providers: [TranslateService, EventService, NewsService, SearchService, Auth, Search]
 })
 export class AppComponent implements OnInit{
   userLang = 'en';

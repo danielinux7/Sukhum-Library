@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslatePipe } from 'ng2-translate/ng2-translate';
 import { Router } from '@angular/router';
+import { Search } from './../../models/search.model';
 
 @Component({
   selector: 'search-form',
@@ -9,22 +10,11 @@ import { Router } from '@angular/router';
   pipes: [TranslatePipe]
 })
 export class SearchDirective {
-  model = new search(0, '', 'basic', 20);
 
-  constructor(private router: Router) {}
+  constructor(private router: Router , private model: Search) {}
 
   onSubmit() {
-    this.router.navigate(["/search", this.model]);
+    this.model.type = "basic";
+    this.router.navigate(["/search"]);
  }
-}
-
-export class search {
-  constructor(
-    public index: number,
-    public query: string,
-    public type: string,
-    public count: number,
-    public sortBy?: string,
-    public boolOp?: string
-  ) {  }
 }
