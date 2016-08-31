@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls:  ['./app/directives/search-form/search.directive.css'],
   pipes: [TranslatePipe]
 })
-export class SearchComponent {
+export class SearchDirective {
   model = new search(0, '', 'basic', 20);
 
   constructor(private router: Router) {}
