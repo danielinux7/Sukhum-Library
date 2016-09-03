@@ -1,15 +1,6 @@
 header {
-  height:45%;
+  height:50%;
   position:relative;
-  padding: 0 1em 1em 1em;
-  border-bottom: 1px solid #FEB35D;
-  background-image: url('/images/mountain.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-position: center center;
 }
 
 header:after {
@@ -27,12 +18,15 @@ header h1 {
   color: #555;
 }
 
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .v4-tease {
     position: relative;
     display: block;
     padding: 10px 10px;
-    margin-left: -1em;
-    margin-right: -1em;
     font-weight: 700;
     color: #fff;
     text-align: center;
@@ -82,7 +76,9 @@ header h1 {
 }
 
 .abkhaz-gerb {
-  float:left;
+  left: 2em;
+  z-index: 1;
+  position: absolute;
   width: 120px;
   height: 150px;
   background-image: url('/images/gerb.png');
@@ -97,17 +93,24 @@ header h1 {
 
   header{
     height: auto;
-    background-image: url('/images/mountain-sm.jpg');
+  }
+
+  .slick-carousel{
+    height:16%;
   }
 
   .abkhaz-gerb {
+    left: 1em;
     width: 75px;
     height: 94px;
     background-image: url('/images/gerb-sm.png');
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 617px) {
   header{
     height: auto;
+  }
+  .slick-carousel{
+    height:20%;
   }
 }
