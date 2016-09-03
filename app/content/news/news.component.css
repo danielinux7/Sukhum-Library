@@ -38,6 +38,10 @@
   height: auto !important;
   width: auto !important;
 }
+.open-video{
+  height: 50% !important;
+  width: 712px;
+}
 .no-bg{
   background: none !important;
   padding-top: 0 !important;
@@ -160,7 +164,7 @@
       -o-flex-direction: column;
     }
     .video-container{
-      height:270px;
+      height:200px;
       max-width:100%;
       max-height:100%;
       margin-left: 0;

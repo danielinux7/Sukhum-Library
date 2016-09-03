@@ -37,6 +37,7 @@ export class NewsComponent implements OnInit {
       if (!event.target.isDisabled) {
         if (!event.target.isOn && event.target.className.match('.more')) {
           $(event.target).closest('.panel').addClass('open');
+          $(event.target).closest('.panel-video').find('.video-container').addClass('open-video');
           $(event.target).closest('.panel-footer').addClass('no-bg');
           $(event.target).addClass('hide');
           $(event.target).next().removeClass('hide');
@@ -44,6 +45,7 @@ export class NewsComponent implements OnInit {
         }
         else {
           $(event.target).closest('.panel').removeClass('open');
+          $(event.target).closest('.panel-video').find('.video-container').removeClass('open-video');
           $(event.target).closest('.panel-footer').removeClass('no-bg');
           $(event.target).prev().removeClass('hide');
           $(event.target).addClass('hide');
