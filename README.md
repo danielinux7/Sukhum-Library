@@ -3,6 +3,11 @@ E-mail: daniel.abzakh@gmail.com
 
 To setup the repo good and running on your need machine. You will need node = 4.x & apm = 3.x
 
+###Setup typings and use pm2 to start lite-server
+#### <code>npm install -g pm2 typings</code>
+#### <code>npm postinstall</code>
+#### <code>pm2 start npm --name "nla" -- run start</code>
+
 ##To setup an ubuntu server on aws- Amazon services:
 
 #### <code>sudo su</code>
