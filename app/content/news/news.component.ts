@@ -3,6 +3,7 @@ import { DynamicHTMLOutlet } from './../../directives/dynamic-html-outlet/dynami
 import { TranslateService, TranslatePipe, LangChangeEvent } from 'ng2-translate/ng2-translate';
 import { SafeResourceUrl, DomSanitizationService } from '@angular/platform-browser';
 import { NewsService } from './../../services/news.service';
+import { HlinkPipe } from './../../pipes/hlink.pipe';
 declare var $:any;
 
 @Component({
@@ -10,7 +11,7 @@ declare var $:any;
   templateUrl: './app/content/news/news.component.html',
   styleUrls:  ['./app/content/news/news.component.css'],
   directives: [DynamicHTMLOutlet],
-  pipes: [TranslatePipe]
+  pipes: [TranslatePipe, HlinkPipe]
 })
 export class NewsComponent implements OnInit {
   errorMessage: string;
