@@ -12,11 +12,7 @@
     <button class="btn btn-primary btn-margin app-rtl" (click)="auth.login()" *ngIf="!auth.authenticated()">{{'login' | translate}}</button>
     <button class="btn btn-primary btn-margin app-rtl" (click)="auth.logout()" *ngIf="auth.authenticated()">{{'logout' | translate}}</button>
   </div>
-</div>
-<a [routerLink]="['/home']"><span class="abkhaz-gerb app-rtl"></span></a>
-<div class="slick-carousel">
-  <div>1<img src="" alt=""></div>
-  <div>2<img src="" alt=""></div>
-  <div>3<img src="" alt=""></div>
-</div>
+  </div>
+  <a [routerLink]="['/home']"><span class="abkhaz-gerb app-rtl"></span></a>
+  <div class="image app-rtl"><img src="/images/header/fest.jpg"></div>
 </header>

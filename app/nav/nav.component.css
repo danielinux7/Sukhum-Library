@@ -11,6 +11,10 @@ nav {
   margin-bottom: 0;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: #a94442;
+}
+
 @media (min-width: 768px) {
   .navbar-main .navbar-collapse {
     padding-left: 0;
