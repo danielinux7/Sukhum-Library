@@ -1,5 +1,4 @@
 header {
-  height:50%;
   position:relative;
 }
 
@@ -7,6 +6,11 @@ header:after {
   content:"";
   display:block;
   clear:both;
+}
+
+.image img {
+  width:100%;
+  height:auto;
 }
 
 header h1 {
@@ -95,10 +99,6 @@ header h1 {
     height: auto;
   }
 
-  .slick-carousel{
-    height:16%;
-  }
-
   .abkhaz-gerb {
     left: 1em;
     width: 75px;
@@ -109,8 +109,5 @@ header h1 {
 @media (max-width: 768px) and (min-width: 617px) {
   header{
     height: auto;
-  }
-  .slick-carousel{
-    height:20%;
   }
 }
