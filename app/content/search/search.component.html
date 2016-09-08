@@ -12,6 +12,9 @@
         </div>
       </div>
     </div>
+    <div *ngIf="model.startIndex < noOfResults" class="more">
+      <a (click)="getNext()">{{'more' | translate}}</a>
+    </div>
   </div>
   <div *ngIf="!model.type" class="no-search">
     <p>{{'newSearch' | translate}}</p>

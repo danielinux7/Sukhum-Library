@@ -1,5 +1,5 @@
 export class Search {
-  public index: number;
+  public startIndex: number;
   public query: string;
   public type: string;
   public count: number;
