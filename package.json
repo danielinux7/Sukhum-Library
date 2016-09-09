@@ -1,6 +1,6 @@
 {
   "name": "sukhum-library",
-  "version": "0.6.1",
+  "version": "0.6.4",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
