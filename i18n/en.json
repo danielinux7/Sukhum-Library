@@ -39,5 +39,14 @@
     "logout": "Log Out",
     "profile": "Profile",
     "noOfResults": "No Of Results",
-    "newSearch": "Please, Have a new search."
+    "newSearch": "Please, Have a new search.",
+    "creator": "Creator",
+    "contributor": "Contributor",
+    "publisher": "Publisher",
+    "year": "Year",
+    "language": "Language",
+    "country": "Country",
+    "atContributor": "At Contributor",
+    "accessOnline": "Access Online",
+    "euLibrary": "European Library"
 }
