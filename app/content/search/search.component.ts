@@ -30,7 +30,7 @@ export class SearchComponent implements DoCheck{
                     .subscribe(
                       collection => { this.searchResult.push.apply(this.searchResult, collection.Results);
                                       this.model.count = collection.Results.length;
-                                      this.model.startIndex += this.model.count;
+                                      this.model.offset += this.model.count;
                                     },
                       error =>  this.errorMessage = <any>error);
   }
@@ -40,7 +40,7 @@ export class SearchComponent implements DoCheck{
                      .subscribe(
                        collection => { this.searchResult = collection.Results;
                                        this.model.count = collection.Results.length;
-                                       this.model.startIndex += this.model.count;
+                                       this.model.offset += this.model.count;
                                        this.noOfResults = collection.NoOfResults;
                                      },
                        error =>  this.errorMessage = <any>error);
