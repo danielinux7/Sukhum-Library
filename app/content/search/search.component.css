@@ -2,3 +2,7 @@
   text-align: center;
   cursor: pointer;
 }
+.panel-body-info{
+  display: inline-block;
+  padding-right: 0.5em;
+}

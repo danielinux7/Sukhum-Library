@@ -3,12 +3,30 @@
     <h4>{{'noOfResults' | translate}}: {{noOfResults}}</h4>
     <div *ngFor="let result of searchResult; let i = index" class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">{{i+1+') '}}{{result.TITLE}}</h3>
+        <h3 class="panel-title">{{i+1+') '}}<a target="_blank" href="{{result.URI}}">{{result.TITLE}}</a></h3>
       </div>
       <div class="panel-body">
-        Year: {{result.YEAR}} Publisher: {{result.PUBLISHER}} Country: {{result.COUNTRY}} Language: {{result.LANGUAGE}}
+        <div *ngIf="result.CREATOR" class="panel-body-info">
+          Creator: {{result.CREATOR}}
+        </div>
+        <div *ngIf="result.CONTRIBUTOR" class="panel-body-info">
+          Contributor: {{result.CONTRIBUTOR}}
+        </div>
+        <div *ngIf="result.PUBLISHER" class="panel-body-info">
+          Publisher: {{result.PUBLISHER}}
+        </div>
+        <div *ngIf="result.YEAR || result.DATE" class="panel-body-info">
+          Year: {{result.YEAR || result.DATE}}
+        </div>
+        <div *ngIf="result.LANGUAGE" class="panel-body-info">
+          Language: {{result.LANGUAGE}}
+        </div>
+        <div *ngIf="result.COUNTRY" class="panel-body-info">
+          Country: {{result.COUNTRY}}
+        </div>
         <div>
-          <a href="{{result.URI}}">Resource</a>
+          <a *ngIf="result.CATALOGUE_RECORD" target="_blank" href="{{result.CATALOGUE_RECORD}}">At Contributor</a>
+          <a *ngIf="result.DIGITAL_OBJECT" target="_blank" href="{{result.DIGITAL_OBJECT}}">Access Online</a>
         </div>
       </div>
     </div>

@@ -13,7 +13,6 @@ export class SearchService {
                     .catch(this.handleError);
   }
   getNext (): Observable<any> {
-    console.log(this.model);
     return this.http.get(this.searchUrl + encodeURI(this.model.query) + "&count="+this.model.count+"&offset="+this.model.offset)
                     .map(this.extractData)
                     .catch(this.handleError);
