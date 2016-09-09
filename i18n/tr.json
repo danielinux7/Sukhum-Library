@@ -39,5 +39,14 @@
 "logout": "Çıkış Yap",
 "profile": "Profil",
 "noOfResults": "Sonuçların Yok",
-"newSearch": "Yeni bir arama var olun."
+"newSearch": "Yeni bir arama var olun.",
+"creator": "Yaratıcı",
+"contributor": "Katılımcı",
+"publisher": "Yayıncı",
+"year": "Yıl",
+"language": "Dil",
+"country": "Ülke",
+"atContributor": "Katılımcı At",
+"accessOnline": "İnternet üzerinden Erişim",
+"euLibrary": "Avrupa Kütüphanesi"
 }

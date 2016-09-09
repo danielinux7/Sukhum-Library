@@ -1,13 +1,19 @@
 import { Injectable }     from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable }     from 'rxjs/Observable';
+import { Search } from './../models/search.model';
 
 @Injectable()
 export class SearchService {
-  constructor (private http: Http) {}
+  constructor (private http: Http, private model: Search) {}
   private searchUrl = 'http://localhost:3000/eusearch?query=';  // URL to web API
-  getSearch (keyword: string): Observable<any> {
-    return this.http.get(this.searchUrl + keyword)
+  getSearch (): Observable<any> {
+    return this.http.get(this.searchUrl + encodeURI(this.model.query))
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+  getNext (): Observable<any> {
+    return this.http.get(this.searchUrl + encodeURI(this.model.query) + "&count="+this.model.count+"&offset="+this.model.offset)
                     .map(this.extractData)
                     .catch(this.handleError);
   }

@@ -15,6 +15,7 @@ export class SearchDirective {
 
   onSubmit() {
     this.model.type = "basic";
+    this.model.offset = 0;
     this.router.navigate(["/search"]);
  }
 }

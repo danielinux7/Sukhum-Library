@@ -1,16 +1,37 @@
 <div class="search-container">
   <div *ngIf="model.type" class="search-result">
     <h4>{{'noOfResults' | translate}}: {{noOfResults}}</h4>
-    <div *ngFor="let result of searchResult" class="panel panel-default">
+    <div *ngFor="let result of searchResult; let i = index" class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">{{result.TITLE}}</h3>
+        <a target="_blank" href="{{result.URI}}">{{i+1+') '}}{{result.TITLE}}</a>
       </div>
       <div class="panel-body">
-        Year: {{result.YEAR}} Publisher: {{result.PUBLISHER}} Country: {{result.COUNTRY}} Language: {{result.LANGUAGE}}
+        <div *ngIf="result.CREATOR" class="panel-body-info">
+          {{'creator' | translate}}: {{result.CREATOR}}
+        </div>
+        <div *ngIf="result.CONTRIBUTOR" class="panel-body-info">
+          {{'contributor' | translate}}: {{result.CONTRIBUTOR}}
+        </div>
+        <div *ngIf="result.PUBLISHER" class="panel-body-info">
+          {{'publisher' | translate}}: {{result.PUBLISHER}}
+        </div>
+        <div *ngIf="result.YEAR || result.DATE" class="panel-body-info">
+          {{'year' | translate}}: {{result.YEAR || result.DATE}}
+        </div>
+        <div *ngIf="result.LANGUAGE" class="panel-body-info">
+          {{'language' | translate}}: {{result.LANGUAGE}}
+        </div>
+        <div *ngIf="result.COUNTRY" class="panel-body-info">
+          {{'country' | translate}}: {{result.COUNTRY}}
+        </div>
         <div>
-          <a href="{{result.URI}}">Resource</a>
+          <a *ngIf="result.CATALOGUE_RECORD" target="_blank" href="{{result.CATALOGUE_RECORD}}">{{'atContributor' | translate}}</a>
+          <a *ngIf="result.DIGITAL_OBJECT" target="_blank" href="{{result.DIGITAL_OBJECT}}">{{'accessOnline' | translate}}</a>
         </div>
       </div>
+    </div>
+    <div *ngIf="model.offset < noOfResults" class="more">
+      <a (click)="getNext()">{{'more' | translate}}</a>
     </div>
   </div>
   <div *ngIf="!model.type" class="no-search">

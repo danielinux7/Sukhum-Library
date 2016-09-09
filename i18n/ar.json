@@ -39,5 +39,14 @@
 "logout": "خروج",
 "profile": "الملف الشخصي",
 "noOfResults": "عدد النتائج",
-"newSearch": "من فضلك، يمكنك البحث من جديد"
+"newSearch": "من فضلك، يمكنك البحث من جديد",
+"creator": "المؤلف",
+"contributor": "المساهم",
+"publisher": "الناشر",
+"year": "السنة",
+"language": "اللغة",
+"country": "البلد",
+"atContributor": "مساهم الموقع",
+"accessOnline": "المحتوى على الانترنت",
+"euLibrary": "مكتبة أوروبا"
 }

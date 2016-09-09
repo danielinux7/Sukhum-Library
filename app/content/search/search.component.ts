@@ -15,21 +15,33 @@ declare var $:any;
 export class SearchComponent implements DoCheck{
   errorMessage: string;
   searchResult: any;
-  noOfResults: any;
+  noOfResults: number;
   constructor(private translate: TranslateService, private route: ActivatedRoute, private searchService: SearchService, private model: Search ) {}
 
   ngDoCheck() {
     if (this.model.type === 'basic') {
-      this.getSearch(encodeURI(this.model.query));
+      this.getSearch();
       this.model.type = 'none';
     }
   }
 
-  getSearch(keyword:string) {
-     this.searchService.getSearch(keyword)
+  getNext(){
+    this.searchService.getNext()
+                    .subscribe(
+                      collection => { this.searchResult.push.apply(this.searchResult, collection.Results);
+                                      this.model.count = collection.Results.length;
+                                      this.model.offset += this.model.count;
+                                    },
+                      error =>  this.errorMessage = <any>error);
+  }
+
+  getSearch() {
+     this.searchService.getSearch()
                      .subscribe(
                        collection => { this.searchResult = collection.Results;
-                                       this.noOfResults = collection.NoOfResults
+                                       this.model.count = collection.Results.length;
+                                       this.model.offset += this.model.count;
+                                       this.noOfResults = collection.NoOfResults;
                                      },
                        error =>  this.errorMessage = <any>error);
   }
