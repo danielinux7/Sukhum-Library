@@ -7,17 +7,22 @@
         </div>
       </div>
       <div class="panel-body">
+        <div class="panel-info">
+          <div [innerHtml]="post.name"></div>
+          <div [innerHtml]="post.message | hlink"></div>
+        </div>
         <div class="panel-media">
-          <img *ngIf="post.type !== 'video'" src="{{post.picture}}" alt="" />
+          <div *ngIf="post.type !== 'video'">
+            <img *ngIf="!post.attachments" src="{{post.full_picture}}" alt="" />
+            <div *ngIf="post.attachments">
+              <img *ngFor="let sub of post.attachments.data[0].subattachments.data" src="{{sub.media.image.src}}" alt="" />
+            </div>
+          </div>
           <div *ngIf="post.type === 'video'" class="video-container">
             <div id="youtube_canvas">
               <iframe frameborder="0" [src]="post.url"></iframe>
             </div>
           </div>
-        </div>
-        <div class="panel-info">
-          <div [innerHtml]="post.name"></div>
-          <div [innerHtml]="post.message | hlink"></div>
         </div>
       </div>
       <div class="panel-space"></div>
