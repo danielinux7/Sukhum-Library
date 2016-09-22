@@ -32,7 +32,7 @@
   -webkit-justify-content: space-between;
 }
 .panel-space{
-  height: 15px;
+  height: 30px;
 }
 .open{
   height: auto !important;
@@ -52,15 +52,21 @@
   height: 300px;
   min-height: 300px;
   position:relative;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .panel-info {
   font-size: 14px;
-  padding-top: 15px;
+  padding: 15px;
 }
 .panel-body {
-  padding-top: 0;
+  padding: 0;
 }
+
+.panel-body img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .panel-footer{
   position: absolute;
   bottom:0;
@@ -174,8 +180,9 @@
       padding-top: 15px;
       padding-bottom: 0;
     }
-    .panel-info {
-      padding-top: 0;
+    .panel-body img {
+      height: auto;
+      width: 100%;
     }
     .panel-media{
       text-align: initial;
@@ -187,6 +194,6 @@
       -webkit-justify-content: flex-end;
     }
     .panel-space{
-      height: 0;
+      height: 5px;
     }
 }
