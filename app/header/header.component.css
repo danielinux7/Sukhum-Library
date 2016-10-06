@@ -8,8 +8,10 @@ header:after {
   clear:both;
 }
 
+.image {
+  text-align: center;
+}
 .image img {
-  width:100%;
   height:auto;
 }
 
@@ -99,6 +101,10 @@ header h1 {
     height: auto;
   }
 
+  .image img {
+        height: 18%;
+  }
+
   .abkhaz-gerb {
     left: 1em;
     width: 75px;
@@ -109,5 +115,9 @@ header h1 {
 @media (max-width: 768px) and (min-width: 617px) {
   header{
     height: auto;
+  }
+
+  .image img {
+        height: 18%;
   }
 }
