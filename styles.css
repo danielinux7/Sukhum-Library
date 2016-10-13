@@ -18,6 +18,9 @@ lib-app{
   opacity: 0.4;
 }
 
+body{
+  cursor: url(/images/cursor.cur), auto;
+}
 body.lib-body{
   font-family: Times New Roman, sans-serif;
 }
