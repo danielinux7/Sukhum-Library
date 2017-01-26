@@ -3,7 +3,7 @@ E-mail: NBRAAbch@mail.ru
 
 To setup the repo good and running on your need machine. You will need node = 4.4.7 & npm = 3.10.7
 
-##To setup an ubuntu server on aws- Amazon services:
+##To setup an ubuntu server:
 
 #### <code>sudo su</code>
 #### <code>apt-get update</code>
@@ -20,9 +20,9 @@ To setup the repo good and running on your need machine. You will need node = 4.
 
 Если вы знаете HTML, CSS или JAVASCRIPT отправить мне запрос тянуть. Электронная почта: NBRAAbch@mail.ru
 
-Чтобы установить хороший репо и работает на вашей потребности машины. Вам нужно будет Node = 4.4.7 & NPM = 3.10.7
+(Чтобы установить хороший репо и работает на вашей потребности машины. Вам нужно будет Node = 4.4.7 & NPM = 3.10.7)
 
-## Для установки Юбунту на сервере aws- служб Amazon:
+## Для установки на сервере "Юбунту":
 #### <code>sudo su</code>
 #### <code>apt-get update</code>
 #### <code>apt-get install npm git</code>
@@ -36,7 +36,7 @@ To setup the repo good and running on your need machine. You will need node = 4.
 #### <code>npm install</code> - while in your repo root directory.
 #### <code>pm2 start npm --name "express" -- run start</code>
 
-## Для установки Фидора на сервере aws- служб Amazon:
+## Для установки на сервере "Фидора":
 #### <code>sudo su</code>
 #### <code>yum update</code>
 #### <code>yum install npm git</code>
