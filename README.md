@@ -1,5 +1,5 @@
 If you know HTML, CSS Or JAVASCRIPT send me a pull request.
-E-mail: daniel.abzakh@gmail.com
+E-mail: NBRAAbch@mail.ru
 
 To setup the repo good and running on your need machine. You will need node = 4.4.7 & npm = 3.10.7
 
@@ -18,7 +18,7 @@ To setup the repo good and running on your need machine. You will need node = 4.
 #### <code>npm install</code> - while in your repo root directory.
 #### <code>pm2 start npm --name "express" -- run start</code>
 
-Если вы знаете HTML, CSS или JAVASCRIPT отправить мне запрос тянуть. Электронная почта: daniel.abzakh@gmail.com
+Если вы знаете HTML, CSS или JAVASCRIPT отправить мне запрос тянуть. Электронная почта: NBRAAbch@mail.ru
 
 Чтобы установить хороший репо и работает на вашей потребности машины. Вам нужно будет Node = 4.4.7 & NPM = 3.10.7
 
