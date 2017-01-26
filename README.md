@@ -22,7 +22,7 @@ To setup the repo good and running on your need machine. You will need node = 4.
 
 Чтобы установить хороший репо и работает на вашей потребности машины. Вам нужно будет Node = 4.4.7 & NPM = 3.10.7
 
-## Для установки Ubuntu на сервере aws- служб Amazon:
+## Для установки Юбунту на сервере aws- служб Amazon:
 #### <code>sudo su</code>
 #### <code>apt-get update</code>
 #### <code>apt-get install npm git</code>
@@ -36,7 +36,7 @@ To setup the repo good and running on your need machine. You will need node = 4.
 #### <code>npm install</code> - while in your repo root directory.
 #### <code>pm2 start npm --name "express" -- run start</code>
 
-## Для установки Fedora на сервере aws- служб Amazon:
+## Для установки Фидора на сервере aws- служб Amazon:
 #### <code>sudo su</code>
 #### <code>yum update</code>
 #### <code>yum install npm git</code>
