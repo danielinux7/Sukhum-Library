@@ -42,9 +42,9 @@ To setup the repo good and running on your need machine. You will need node = 4.
 #### <code>yum install npm git</code>
 #### <code>npm install -g pm2 typings</code>
 #### <code>git clone https://github.com/danielinux7/Sukhum-Library.git</code>
-#### <code>npm install</code> - в то время как в папке вашего репо.
+#### <code>git clone https://github.com/danielinux7/exp-nla.git</code>
+#### <code>npm install</code> - в то время как в папке вашего Sukhum-Library репо.
 #### <code>npm run postinstall</code>
 #### <code>pm2 start npm --name "nla" -- run start</code>
-#### <code>git clone https://github.com/danielinux7/exp-nla.git</code>
-#### <code>npm install</code> - в то время как в папке вашего репо.
+#### <code>npm install</code> - в то время как в папке вашего exp-nla репо.
 #### <code>pm2 start npm --name "express" -- run start</code>
