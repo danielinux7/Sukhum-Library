@@ -40,8 +40,7 @@ To setup the repo good and running on your need machine. You will need node = 4.
 #### <code>sudo su</code>
 #### <code>yum update</code>
 #### <code>yum install npm git</code>
-#### <code>npm install -g n npm pm2 typings</code>
-#### <code>n 4.4.7</code>
+#### <code>npm install -g pm2 typings</code>
 #### <code>git clone https://github.com/danielinux7/Sukhum-Library.git</code>
 #### <code>npm install</code> - в то время как в папке вашего репо.
 #### <code>npm run postinstall</code>
