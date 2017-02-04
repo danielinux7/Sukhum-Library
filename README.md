@@ -41,6 +41,7 @@ To setup the repo good and running on your need machine. You will need node = 4.
 #### <code>yum update</code>
 #### <code>yum install npm git</code>
 #### <code>npm install -g pm2 typings</code>
+#### <code>npm install -g npm</code>
 #### <code>git clone https://github.com/danielinux7/Sukhum-Library.git</code>
 #### <code>git clone https://github.com/danielinux7/exp-nla.git</code>
 #### <code>npm install</code> - в то время как в папке вашего Sukhum-Library репо.
